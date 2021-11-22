@@ -1,0 +1,719 @@
+/*CSS de Alvaro Martin Bazan*/
+/*Aqui he introducido un margen y pading 0 a todas las paginas*/
+
+@import url('https://fonts.googleapis.com/css2?family=Asul&family=Work+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Tillana&display=swap');
+
+*{
+
+  margin:0;
+  padding:0;
+
+}
+/*He puesto una class fondo para el body de about us y que tenga esta imagen*/
+/*Esta parte introduce un fondo con imagen al background*/
+
+/******************ALVARO ESTA MEZCLADO EN TODOS****************/
+
+body {
+
+  background-image: url("../images/imagenFondo.jpg");
+  background-repeat:no-repeat;
+  background-size:100%;
+  background-attachment: fixed;
+
+  /*texto de************************* ARTSIOM **************************************/
+
+  font-family: 'Asul', sans-serif, 'Work Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  font-style: normal;
+  font-variant: normal;
+  text-align: left;
+}
+
+h1 {    /*fuente de texto*/
+
+    font-family: 'Tillana', cursive, 'Concert One', cursive;
+    font-size: 20px;
+    font-weight: 900;
+    font-style: normal;
+    font-variant: normal;
+
+}
+
+h1 {    /*Alineacion de texto*/
+
+    text-align: center;
+
+}
+
+h2 {    /*fuente de texto*/
+  
+        font-family: 'Tillana', cursive, Garamond, serif;
+        font-size: 20px;
+        font-weight: 900;
+        font-style: normal;
+        font-variant: normal;
+
+        }
+h2 {    /*Alineacion de texto*/
+        text-align: center;
+        /*text-decoration: overline solid rgb(68, 68, 68);*/
+
+        }
+        .correo_Alvaro{
+            text-decoration: line-through solid rgb(68, 68, 68);
+
+            }
+
+        .negrita{
+            font-weight: 800;
+
+            }
+
+        .cursiva{
+            font-style: italic;
+
+            }
+
+        .uppercase{
+            text-transform: capitalize;
+
+            }
+
+        .interlineado{
+            line-height : 25px;
+
+            }
+
+        .separacion_letras{
+            letter-spacing: 2px;
+
+            }
+
+        .index{
+            text-indent: 20px;
+            padding-left: 30px
+
+            }
+
+
+
+
+footer{
+  color: gold;
+  background-color: black;/*ALVARO*/
+  /*text-decoration: underline solid rgb(68, 68, 68);/*ARTSIOM*/
+  /*text-shadow: 0px 1px 1px rgba(24,20,164,0.8);*/
+  text-align: center;
+
+}
+table {
+  align-content: center;
+  border:1px;
+  -webkit-box-shadow: 0px -2px 15px 5px #000000;
+  box-shadow: 0px -2px 15px 5px #000000;
+
+}
+
+
+/***********ROBERTO****************/
+
+
+@media screen and (max-width: 600px) {
+  .columna {
+    box-sizing: border-box;       /*Esto es para que el tamaño de la caja sea el real de la caja sin ser
+                                  alterado por los paddings ni los bordes*/
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 600px) {
+
+  li {
+    
+    box-sizing: border-box;
+    display: inline;
+  }
+}
+
+/*Aquí empieza el código CSS del menú*/
+/*Define el estilo que van a tener los elementos "ul" de la página(margen,
+padding, tamaño y color de fondo)*/
+
+ul {
+
+  box-sizing: border-box;
+  list-style-type: none;
+  margin: 0;
+  padding: 2%;
+  width: 100%;
+  background-color: black;
+}
+
+/*Hace que los botones del menú sean más grandes, según el porciento de
+padding que le pongamos, y que el texto esté alineado en el centro*/
+
+li {
+
+  box-sizing: border-box;
+  padding:2%;
+  text-align: center;
+}
+
+/*Pone el color de las letras en dorado para los enlaces del menú, y
+"text-decoration: none" para que aparezcan los enlaces sin decoración*/
+
+li a {
+
+  box-sizing: border-box;
+  color: gold;
+  text-decoration: none;
+}
+
+/*Cuando pasa el ratón por encima de los enlaces, cambia el color de fondo
+a gris*/
+
+li:hover {
+
+  background-color: grey;
+}
+
+/*Cuando la pantalla es mayor de 600px, cambia los elementos "li" de estar
+verticales a estar horizontales*/
+
+
+/*Aquí comienza el código CSS de las columnas*/
+/*Define los estilos de las clases "columna"*/
+
+.columna {
+
+  box-sizing: border-box;
+  float: left;
+  width: 25%;
+  padding: 20px;
+}
+
+/*Define cómo se van a mostrar las columnas dentro de la clase "cajaColumnas"*/
+
+.cajaColumnas:after {
+
+  box-sizing: border-box;
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*Cuando la pantalla es menor de 600px, cambia las columnas de estar una al
+lado de la otra, a estar una encima de la otra*/
+
+
+
+/*********DANIEL********************/
+
+/* SLIDE INDEX */
+
+@keyframes slide {
+  0% { transform: translateX(0); }
+  10% { transform: translateX(0); }
+
+  15% { transform: translateX(-100%); }
+  30% { transform: translateX(-100%); }
+
+  35% { transform: translateX(-200%); }
+  50% { transform: translateX(-200%); }
+
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: sans-serif;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.slider {
+  position: relative;
+}
+
+.slides {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+}
+
+.slide {
+  width: 100vw;
+  flex-shrink: 0;
+  animation-name: slide;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.slides:hover .slide {
+  animation-play-state: paused;
+}
+
+.slide img {
+  width: 100%;
+  vertical-align: top;
+}
+
+.slide a {
+  width: 100%;
+  display: inline-block;
+  position: relative;
+}
+
+.caption {
+  color: white;
+  text-shadow: 1px 1px black;
+  font-size: 8vw;
+  position: absolute;
+  bottom: 8vw;
+  right: 4vw;
+}
+
+.slide:target {
+  animation-name: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 50;
+}
+
+.slider-controler {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  padding: 5px;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 100;
+}
+
+.slider-controler li {
+  margin: 0 0.5rem;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.slider-controler a {
+  display: inline-block;
+  vertical-align: top;
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+}
+
+@media only screen and (min-width: 1200px) {
+  .slide {
+    width: 1200px;
+  }
+
+
+/* PRODUCTS */
+
+
+.nuestros_prouctos {
+
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  padding: 50px 0;
+}
+header h1 {
+  color: black;
+  text-shadow: 1px 3px 4px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  font-size: 40px;
+  letter-spacing: 0.4px;
+  font-family: "Raleway", sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0 30px;
+}
+.container .thumbex {
+  margin: 10px 20px 30px;
+  width: 100%;
+  min-width: 250px;
+  max-width: 435px;
+  height: 300px;
+  -ms-flex: 1;
+  flex: 1;
+  overflow: hidden;
+  outline: 2px solid black;
+  outline-offset: -15px;
+  background-color: blue;
+  box-shadow: 5px 10px 40px 5px rgba(0, 0, 0, 0.5);
+}
+.container .thumbex .thumbnail {
+  overflow: hidden;
+  min-width: 250px;
+  height: 300px;
+  position: relative;
+  opacity: 0.88;
+  backface-visibility: hidden;
+  transition: all 0.4s ease-out;
+}
+.container .thumbex .thumbnail img {
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  top: 50%;
+  height: 115%;
+  width: auto;
+  transform: translate(-50%, -50%);
+  backface-visibility: hidden;
+}
+.container .thumbex .thumbnail span {
+  position: absolute;
+  z-index: 2;
+  top: calc(150px - 20px);
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 10px 50px;
+  margin: 0 45px;
+  text-align: center;
+  font-size: 24px;
+  color: white;
+  font-weight: 300;
+  font-family: "Raleway", sans-serif;
+  letter-spacing: 0.2px;
+  transition: all 0.3s ease-out;
+}
+.container .thumbex .thumbnail:hover {
+  backface-visibility: hidden;
+  transform: scale(1.15, 1.15);
+  opacity: 1;
+}
+.container .thumbex .thumbnail:hover span {
+  opacity: 0;
+}
+
+
+}
+.container .thumbex .thumbnail img {
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  top: 50%;
+  height: 115%;
+  width: auto;
+  transform: translate(-50%, -50%);
+  backface-visibility: hidden;
+
+}
+.container .thumbex .thumbnail:hover {
+  backface-visibility: hidden;
+  transform: scale(1.15, 1.15);
+  opacity: 1;
+}
+.container .thumbex .thumbnail:hover span {
+  opacity: 0;
+}
+
+
+/*=====CSS ARAGON=====*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+form {
+
+  border :1px solid black;
+  width: 95%;
+  height: auto;
+  padding: 1em;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+
+}
+
+.formulary {
+
+  border: 0.5px solid black;
+  border-radius: 15px;
+  background-color: #C9DCCC;
+  padding: 1em;
+  display: block;
+  width: 26vw;
+  
+}
+
+.form__name {
+
+  /*border: 1px solid black;*/
+  font-weight: bold;
+  font-size: 1.2vw;
+  min-width: 250px;
+  cursor: default;
+
+}
+
+.icon__imput {
+
+  margin-top: 5px;
+  margin-left: 25px;
+  /*border: 1px solid black;*/
+  display: -ms-flexbox;
+  width: 25vw;
+  margin-right: auto;
+  /*margin-bottom: 3px;*/
+
+}
+
+.form__input {
+
+  border: 1px solid black;
+  border-radius: 6px;
+  background-color: #E6E1E0;
+  padding: 0.5em;
+  width: 20vw;
+  /*display: block;*/
+  /*margin-top: 0.5em;*/
+  /*margin-left: 2em;*/
+  margin-right: 1em;
+  margin-bottom: 1em;
+
+}.form__input:hover{
+
+  border: 2px solid black;
+}
+
+
+/* ToolTip classses */ 
+
+.tooltip .tooltiptext {   /*Creacion contenedor y transparencia*/
+
+    width: auto;
+    visibility: hidden;
+    opacity: 0;
+    font-style: italic;
+    background-color: #F769DF;
+    border-radius:5px;
+    border: 1px solid grey;
+    border-radius: 3px;
+    position: absolute;
+    padding: 5px;
+    z-index: 1;
+    margin-top: 89px; 
+    margin-left: 10px;
+    transition: opacity 1s;
+
+}.tooltip .tooltiptext::after {       /*Efecto de delante del contendor*/
+
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-top: -7px;
+    border-width: 7px;
+    border-style: solid;
+    border-color: transparent #F769DF transparent transparent;
+
+}.tooltip:hover .tooltiptext {  /*Para poder ver el contenedor*/
+    visibility: visible;
+    opacity: 1;
+}
+
+.div__bot {
+
+  /*border: 1px solid black;*/
+  display: flex;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25vw;
+  height: auto;
+}
+
+.form__select {
+
+  /*border: 1px solid black;*/
+  width: 12vw;
+  border: 1px solid black;
+  border-radius: 6px;
+  background-color: #E6E1E0;
+  padding: 0.5em;
+  /*display: block;*/
+  /*margin-right: auto;*/
+  cursor: pointer;
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+
+}
+
+option {
+
+  font-style: italic;
+}
+
+.enviar {
+
+  font-size: 1vw;
+  text-align: center;
+  width: 7vw;
+  max-width: 150px;
+  height: auto;
+  border: 1px solid black;
+  padding: 0.2em 0.5em;
+  font-weight: bold;
+  font-style: default;
+  cursor:  pointer;
+  /*display: block;*/
+  margin-left: auto;
+  margin-top: 100px;
+  transition: transform 1s;
+
+}.enviar:hover {
+  transform: scale(0.95);
+  background-color: white;
+}
+
+.but__del {
+
+  border: 1px solid black;
+  font-size: 1vw;
+  text-align: center;
+  width: 7vw;
+  max-width: 150px;
+  height: auto;
+  border: 1px solid black;
+  padding: 0.2em 0.5em;
+  font-weight: bold;
+  font-style: default;
+  cursor:  pointer;
+  /*display: block;*/
+  margin-left: 17vw;
+  margin-top: 5px;
+  transition: transform 1s;
+
+}.but__del:hover {
+
+  transform: scale(0.95);
+  background-color: white;
+}
+
+.div__sex {
+
+  /*border: 1px solid black;*/
+  border-top: 5px ridge;
+  border-bottom: 5px ridge;
+  width: 23vw;
+  padding: 0.5em;
+  margin-left: 0;
+  margin-bottom: 1em;
+}
+
+ul {
+
+  padding: 1em;
+  text-decoration: none;
+  list-style-type: none ;
+
+}
+
+ul > li {
+
+  padding: 0.2em;
+}
+
+ul > li > input {
+  
+  -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #999;
+    transition: 0.2s all linear;
+    margin-right: 3px;
+    position: relative;
+    top: 1px;
+
+}ul > li > input:hover {
+
+  border: 2px solid black;
+
+}ul > li > input:checked {
+
+  border: 6px solid black;
+}
+
+ul > li > label {
+
+  font-style: italic;
+  /*font-size: 1.4vw;*/
+}
+
+textarea {
+
+  border: 1px solid black;
+  width: 25vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1em;
+  margin-bottom: 10px;
+}
+
+input[type="submit"]{
+
+  border: 1px solid black;
+  font-size: 1vw;
+  text-align: center;
+  width: 7vw;
+  max-width: 150px;
+  height: auto;
+  border: 1px solid black;
+  padding: 0.2em 0.5em;
+  font-weight: bold;
+  font-style: default;
+  cursor:  pointer;
+  /*display: block;*/
+  margin-left: 0;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  transition: transform 1s;
+
+}input[type="submit"]:hover{
+
+  transform: scale(0.95);
+  background-color: white;
+
+}
+
+.services {
+
+  margin-top: 1em;
+}
+
+form > div > div> label {
+
+  font-style: italic;
+  font-weight: default;
+}
+
