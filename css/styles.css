@@ -1,3 +1,169 @@
+/* -------- CSS de Daniel del Toro Boigues ------------- */
+/* SLIDE INDEX */
+@keyframes slide {                        /* Esto sirve para el estilo de deslizamiento */
+  0% { transform: translateX(0); }
+  10% { transform: translateX(0); } 
+
+  15% { transform: translateX(-100%); }
+  30% { transform: translateX(-100%); }
+
+  35% { transform: translateX(-200%); }
+  50% { transform: translateX(-200%); }
+
+}
+
+.wrapper {
+  max-width: 1200px;                    /* Tamaño de la imagen insertada */
+  margin: 0 auto;
+}
+
+.slider {                               /*Un elemento posicionado relative es un elemento cuyo valor computado de posicion*/
+  position: relative;
+}
+
+.slides {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+}
+
+.slide {                              /*Este trozo es para darle efecto al deslizamiento*/
+  width: 100%;
+  flex-shrink: 0;
+  animation-name: slide;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.slides:hover .slide {              /*Esto sirve para que al pasar el mouse se quede pausado*/
+  animation-play-state: paused;
+}
+
+.slide {
+  width: 100%;
+  vertical-align: top;
+}
+
+.slide  {
+  width: 100%;
+  display: inline-block;
+  position: relative;
+}
+
+.caption {
+  color: white;
+  text-shadow: 1px 1px black;
+  font-size: 8vw;
+  position: absolute;
+  bottom: 8vw;
+  right: 4vw;
+}
+
+.slide:target {
+  animation-name: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 50;
+}
+
+/* servicios */
+
+.recogida:hover {                 /* :hover es un efecto en este caso es una ampliacion al pasar el mouse por encima*/
+  transition: transform 0.2s;       
+    transform: scale(1.30); 
+}
+
+
+.garantia:hover {
+  transition: transform 0.2s; 
+    transform: scale(1.30); 
+}
+
+
+.esperas:hover {
+  transition: transform 0.2s; 
+    transform: scale(1.30); 
+}
+
+/* PRODUCTS */
+.nuestros_prouctos {
+
+  margin: 0;
+  padding: 0;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0 30px;
+}
+.container .thumbex {
+  margin: 10px 20px 30px;
+  width: 100%;
+  min-width: 250px;
+  max-width: 435px;
+  height: 300px;
+
+  flex: 1;
+  overflow: hidden;
+  outline: 2px solid black;
+  outline-offset: -15px;
+  background-color: blue;
+  box-shadow: 5px 10px 40px 5px rgba(0, 0, 0, 0.5);
+}
+.container .thumbex .thumbnail {
+  overflow: hidden;
+  min-width: 250px;
+  height: 300px;
+  position: relative;
+  opacity: 0.88;
+  backface-visibility: hidden;
+  transition: all 0.4s ease-out;
+}
+.container .thumbex .thumbnail img {
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  top: 50%;
+  height: 115%;
+  width: auto;
+  transform: translate(-50%, -50%);
+  backface-visibility: hidden;
+}
+.container .thumbex .thumbnail span {
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 10px 50px;
+  margin: 0 45px;
+  text-align: center;
+  font-size: 24px;
+  color: white;
+  font-weight: 300;
+  font-family: "Raleway", sans-serif;
+  letter-spacing: 0.2px;
+  transition: all 0.3s ease-out;
+}
+.container .thumbex .thumbnail:hover {
+  backface-visibility: hidden;
+  transform: scale(1.15, 1.15);
+  opacity: 1;
+}
+.container .thumbex .thumbnail:hover {
+  backface-visibility: hidden;
+  transform: scale(1.15, 1.15);
+  opacity: 1;
+}
+
+/* ------------------- hasta aquí mi parte de css - Daniel --------------------------- */
+
 /*CSS de Alvaro Martin Bazan*/
 /*Aqui he introducido un margen y pading 0 a todas las paginas*/
 
