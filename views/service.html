@@ -6,19 +6,22 @@
     <meta charset="UTF-8">
     <meta name="author" content="Antonio García Belver // Grupo 4">
     <title>Services PCT4U</title>
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="../css/styles.css">
 
  </head>
  <body>
-   <table> <!-- Crea una tabla. <th> sirve para declarar la columna; <tr> declararia las columnas-->
-     <th><a href="index.html"> INDICE </a></th>
-     <th><a href="products.html"> PRODUCTOS </a></th>
-     <th><a href="service.html"> SERVICIOS </a></th>
-     <th><a href="about_us.html"> SOBRE NOSOTROS </a></th>
-     <th><a href="contact.html"> CONTACTO </a></th>
-   </table>
+
+    <ul>
+      <li><a href="../index.html"> INDICE </a></li>
+      <li><a href="./products.html"> PRODUCTOS </a></li>
+      <li><a href="./service.html"> SERVICIOS </a></li>
+      <li><a href="./about_us.html"> SOBRE NOSOTROS </a></li>
+      <li><a href="./contact.html"> CONTACTO </a></li>
+    </ul>
+
   <hr>
+
   <h1>SERVICIO DE REPARACIONES</h1>
   <hr>
   <h2>¿Qué servicios ofrecemos?</h2>
@@ -51,37 +54,46 @@
      <form>
       <div class="formulary">
 
-        <label class="form__name">Nombre</label>
-        <div class="icon__imput">
-          <i class="fa fa-user icon"></i>
-          <input class="form__input" type="text" placeholder="Nombre" name="Nombre" maxlength="12"required>
+        <div>
+          <label class="form__name">Nombre</label>
+          <div class="icon__input">
+            <i class="fa fa-user icon"></i>
+            <input type="text" placeholder="Nombre" name="Nombre" maxlength="12"required>
+          </div>
         </div>
+
           
-
-        <label class="form__name">Apellidos</label>
-        <div class="icon__imput">
-          <i class="fa fa-user icon"></i>
-          <input class="form__input" type="text" placeholder="Apellidos" name='Apellidos' maxlength="24"required>
+        <div>
+          <label class="form__name">Apellidos</label>
+            <div class="icon__input">
+            <i class="fa fa-user icon"></i>
+            <input type="text" placeholder="Apellidos" name='Apellidos' maxlength="24"required>
+          </div>
         </div>
 
-        <label class="form__name">Teléfono</label>
-        <div class="icon__imput">
-          <i class="fa fa-phone-square"></i>
-          <input class="form__input" type="tel" placeholder="+34 ..." name="Teléfono" maxlength="9" required>
+        <div>
+          <label class="form__name">Teléfono</label>
+          <div class="icon__input">
+            <i class="fa fa-phone-square"></i>
+            <input type="tel" placeholder="+34 ..." name="Teléfono" maxlength="9" required>
+          </div>
         </div>
 
-        <label class="form__name">Email</label>
-        <div class="icon__imput">
-          <i class="fa fa-envelope icon"></i>
-          <input class="form__input" type="Email" placeholder="example@mail" name= 'Email' maxlength="30"required>
+        <div>
+          <label class="form__name">Email</label>
+          <div class="icon__input">
+            <i class="fa fa-envelope icon"></i>
+            <input type="Email" placeholder="example@mail" name= 'Email' maxlength="30"required>
+          </div>
         </div>
 
-
-        <label class="form__name">Dispositivo</label>
-        <div class="icon__imput">
-          <i class="fa fa-exclamation-triangle"></i>
-          <input class="form__input" type='text' placeholder="Ej: Xiaomi Mi9" name='Dispositivo'required>
-        </div>  
+        <div>
+          <label class="form__name">Dispositivo</label>
+          <div class="icon__input">
+            <i class="fa fa-exclamation-triangle"></i>
+            <input type='text' placeholder="Ej: Xiaomi Mi9" name='Dispositivo'required>
+          </div>  
+        </div>
 
         <div class ="div__bot">
           <div>

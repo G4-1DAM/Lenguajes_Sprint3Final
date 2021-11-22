@@ -29,7 +29,7 @@ body {
   font-weight: 400;
   font-style: normal;
   font-variant: normal;
-  text-align: left;
+  /*text-align: left;*/
 }
 
 h1 {    /*fuente de texto*/
@@ -50,66 +50,75 @@ h1 {    /*Alineacion de texto*/
 
 h2 {    /*fuente de texto*/
   
-        font-family: 'Tillana', cursive, Garamond, serif;
-        font-size: 20px;
-        font-weight: 900;
-        font-style: normal;
-        font-variant: normal;
+  font-family: 'Tillana', cursive, Garamond, serif;
+  font-size: 20px;
+  font-weight: 900;
+  font-style: normal;
+  font-variant: normal;
 
-        }
-h2 {    /*Alineacion de texto*/
-        text-align: center;
-        /*text-decoration: overline solid rgb(68, 68, 68);*/
+}
 
-        }
-        .correo_Alvaro{
-            text-decoration: line-through solid rgb(68, 68, 68);
+h2 {   
+        
+  text-align: center;  /*Alineacion de texto*/
+  /*text-decoration: overline solid rgb(68, 68, 68);*/
 
-            }
+}
 
-        .negrita{
-            font-weight: 800;
+.correo_Alvaro{
 
-            }
+  text-decoration: line-through solid rgb(68, 68, 68);
 
-        .cursiva{
-            font-style: italic;
+}
 
-            }
+.negrita{
 
-        .uppercase{
-            text-transform: capitalize;
+  font-weight: 800;
 
-            }
+}
 
-        .interlineado{
-            line-height : 25px;
+.cursiva{
 
-            }
+  font-style: italic;
 
-        .separacion_letras{
-            letter-spacing: 2px;
+}
 
-            }
+.uppercase{
 
-        .index{
-            text-indent: 20px;
-            padding-left: 30px
+  text-transform: capitalize;
 
-            }
+}
 
+.interlineado{
 
+  line-height : 25px;
 
+}
+
+.separacion_letras{
+
+  letter-spacing: 2px;
+
+}
+
+.index{
+
+  text-indent: 20px;
+  padding-left: 30px
+
+}
 
 footer{
+
   color: gold;
   background-color: black;/*ALVARO*/
   /*text-decoration: underline solid rgb(68, 68, 68);/*ARTSIOM*/
   /*text-shadow: 0px 1px 1px rgba(24,20,164,0.8);*/
   text-align: center;
-
 }
+
 table {
+
   align-content: center;
   border:1px;
   -webkit-box-shadow: 0px -2px 15px 5px #000000;
@@ -121,7 +130,8 @@ table {
 /***********ROBERTO****************/
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {  /*Cuando la pantalla es mayor de 600px, cambia los elementos "li" de estar
+                                        verticales a estar horizontales*/
   .columna {
     box-sizing: border-box;       /*Esto es para que el tamaño de la caja sea el real de la caja sin ser
                                   alterado por los paddings ni los bordes*/
@@ -138,22 +148,18 @@ table {
   }
 }
 
-/*Aquí empieza el código CSS del menú*/
-/*Define el estilo que van a tener los elementos "ul" de la página(margen,
-padding, tamaño y color de fondo)*/
-
-ul {
-
+ul {                              /*Define el estilo que van a tener los elementos "ul" de la página(margen,
+                                  padding, tamaño y color de fondo)*/
   box-sizing: border-box;
   list-style-type: none;
   margin: 0;
-  padding: 2%;
+  padding: 2%;                    /*Hace que los botones del menú sean más grandes, según el porciento de
+                                  padding que le pongamos, y que el texto esté alineado en el centro*/
   width: 100%;
   background-color: black;
 }
 
-/*Hace que los botones del menú sean más grandes, según el porciento de
-padding que le pongamos, y que el texto esté alineado en el centro*/
+
 
 li {
 
@@ -179,10 +185,6 @@ li:hover {
 
   background-color: grey;
 }
-
-/*Cuando la pantalla es mayor de 600px, cambia los elementos "li" de estar
-verticales a estar horizontales*/
-
 
 /*Aquí comienza el código CSS de las columnas*/
 /*Define los estilos de las clases "columna"*/
@@ -433,75 +435,67 @@ header h1 {
 }
 
 
-/*=====CSS ARAGON=====*/
+/*=====================================CSS ARAGON===============================================*/
 
-* {
-  margin: 0;
-  padding: 0;
-}
 
 form {
 
-  border :1px solid black;
+  /*border :1px solid black;*/
   width: 95%;
   height: auto;
-  padding: 1em;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-left: 20px;
+  padding: 1%;
+  margin: 1%;
 
 }
 
 .formulary {
 
-  border: 0.5px solid black;
+  border: 1px solid black;
+  /*text-align: center;*/
   border-radius: 15px;
-  background-color: #C9DCCC;
-  padding: 1em;
-  display: block;
-  width: 26vw;
+  background-color: #FFF977;
+  padding: 20% 20% 20% 10%;
+  width: 100%;
   
 }
+
 
 .form__name {
 
   /*border: 1px solid black;*/
   font-weight: bold;
-  font-size: 1.2vw;
-  min-width: 250px;
-  cursor: default;
+  font-size: 3.5em;
+  font-family: 'Asul', sans-serif, 'Work Sans', sans-serif;
+  font-style: italic;
+  margin: 0 0 10% 0;
 
 }
 
-.icon__imput {
+.icon__input {
 
-  margin-top: 5px;
-  margin-left: 25px;
-  /*border: 1px solid black;*/
-  display: -ms-flexbox;
-  width: 25vw;
-  margin-right: auto;
+  margin: 0 0 10% 0;
+  font-size: 50px;
+}
+
+.icon__input input {
+
+  border: 2px solid black;
+  /*text-align: left;*/
+  font-size: 60px;
+  font-family: 'Asul', sans-serif, 'Work Sans', sans-serif;
+  border-radius: 10px;
+  background-color: #E6E1E0;
+  padding: 0.5em;
   /*margin-bottom: 3px;*/
 
 }
 
-.form__input {
-
+.formulary div {
   border: 1px solid black;
-  border-radius: 6px;
-  background-color: #E6E1E0;
-  padding: 0.5em;
-  width: 20vw;
-  /*display: block;*/
-  /*margin-top: 0.5em;*/
-  /*margin-left: 2em;*/
-  margin-right: 1em;
-  margin-bottom: 1em;
-
-}.form__input:hover{
-
-  border: 2px solid black;
+  /*margin-left: 4em;*/
+  padding: 1em 0 0 0;
 }
+
 
 
 /* ToolTip classses */ 
@@ -512,7 +506,8 @@ form {
     visibility: hidden;
     opacity: 0;
     font-style: italic;
-    background-color: #F769DF;
+    background-color: black;
+    color: white;
     border-radius:5px;
     border: 1px solid grey;
     border-radius: 3px;
@@ -532,7 +527,7 @@ form {
     margin-top: -7px;
     border-width: 7px;
     border-style: solid;
-    border-color: transparent #F769DF transparent transparent;
+    border-color: transparent black transparent transparent;
 
 }.tooltip:hover .tooltiptext {  /*Para poder ver el contenedor*/
     visibility: visible;
@@ -717,3 +712,4 @@ form > div > div> label {
   font-weight: default;
 }
 
+/*=====================================FIN CSS ARAGON===============================================*/
