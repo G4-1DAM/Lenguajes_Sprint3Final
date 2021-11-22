@@ -1,74 +1,66 @@
-<!DOCTYPE html>
-<!--
-STORY 4: PÁGINA CONTACTO 12P
-INTRODUCCIÓN A HTML (CABECERAS, PÁRRAFOS, IMÁGENES, ENLACES, FORMATO DE TEXTO, FORMULARIOS), VALIDACIÓN DE FORMULARIOS CON HTML5, INCLUIR MAPA GOOGLE MAPS
-Crea una página contacto.html que incluya información de contacto para la empresa.
-Esta página debe incluir:
--Título
--Párrafo
--Un formulario de contacto, donde se pida el nombre, el teléfono, el email, una lista desplegable donde pueda elegir el servicio o producto sobre el que quiere hacer la consulta, un radiobutton donde elegir el sexo,
-un check para aceptar los términos y servicios que esté marcado por defecto, un textarea donde pueda escribir el mensaje, un botón enviar y un botón reset.
--Incluye validación de los campos (HTML5): todos deben ser obligatorios, tener el formato de número...
--En la parte superior incluye enlaces a la página principal, about us, página de servicios y página de contacto.
--Actualiza la página de home, about us y servicios para incluir el enlace a la página de contacto.
--Incluye un mapa de google maps con la dirección
 
- -->
 <!DOCTYPE html>
+
 <html lang="es-ES" >
-        <head>
-            <title>PCT4U Contacto</title>
-            <meta charset="UTF-8">
-            <meta name="author" content="Artsiom Krautsou Kharlap // Grupo 4">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <link href="../css/styles.css"rel="stylesheet"/>
-        </head>
-        <body>
-        <header>
-          <table> <!-- Crea una tabla. <th> sirve para declarar la columna; <tr> declararia las columnas-->
-            <th><a href="index.html"> INDICE </a></th>
-            <th><a href="products.html"> PRODUCTOS </a></th>
-            <th><a href="service.html"> SERVICIOS </a></th>
-            <th><a href="about_us.html"> SOBRE NOSOTROS </a></th>
-            <th><a href="contact.html"> CONTACTO </a></th>
-          </table>
-        </header>
-             <!-- aqui empieza el codigo para el slide -->
+
+<head>
+    <title>PCT4U Contacto</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Artsiom Krautsou Kharlap // Grupo 4">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/styles.css"rel="stylesheet"/>
+</head>
+
+<body>
+<header>
+    <ul>
+        <li><a href="index.html"> INDICE </a></li>
+        <li><a href="products.html"> PRODUCTOS </a></li>
+        <li><a href="service.html"> SERVICIOS </a></li>
+        <li><a href="about_us.html"> SOBRE NOSOTROS </a></li>
+        <li><a href="contact.html"> CONTACTO </a></li>
+    </ul>
+</header>
+
+<!-- aqui empieza el codigo para el slide -->
+<main>
+
 <div class="wrapper">
   <div class="slider" id="slider">
+
     <ul class="slides">
       <li class="slide" id="slide1">
         <a href="#">
           <img src="Images/slider1.jpg" alt="photo 1">
         </a>
       </li>
+
       <li class="slide" id="slide">
         <a href="#">
           <img src="Images/slider3.jpg" alt="photo 2">
         </a>
       </li>
+
       <li class="slide" id="slide">
         <a href="#">
           <img src="Images/slider2.jpg" alt="photo 3">
         </a>
       </li>
     </ul>
+
     <ul class="slider-controler">
       <li><a href="#slide1">&bullet;</a></li>
       <li><a href="#slide2">&bullet;</a></li>
       <li><a href="#slide3">&bullet;</a></li>
     </ul>
+
   </div>
 </div>
-         <!-- aqui termina el codigo para el slide -->
-        <hr />                                                                                                          <!--Esto genera una linea debajo de los indices -->
-            <H1>
-                CONTACTO
-            </H1>
-            <hr>                                                                                                   <!--H1 es el Titulo, hay varios tipos del 1 al 4, donde el 1 es el mas grande y 4 el mas chico -->
-            <P>
-                ¿Dudas? Pues envía tu consulta a nuestro departamento de Atención al Cliente.
-            </P> 
+<hr>           
+
+<h1>CONTACTO</h1>
+<hr>                                                                                                   
+<p>¿Dudas? Pues envía tu consulta a nuestro departamento de Atención al Cliente</p> 
 <!-- ********************************************************************************************************************************************* -->                                                                                                       
 <P>FORMULARIO</P>
 
@@ -155,9 +147,13 @@ un check para aceptar los términos y servicios que esté marcado por defecto, u
 </div>
 <hr>
 
+</main>
+
 <footer>
+
     <h2>Derechos de autor</h2>
     <p>PC4T &copy; guarda los derechos de autor de esta web desde el año 2021. Created by Artsiom Krautsou.</p>
+    
 </footer>
 
 </body>
