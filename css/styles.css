@@ -75,18 +75,21 @@
 .recogida:hover {                 /* :hover es un efecto en este caso es una ampliacion al pasar el mouse por encima*/
   transition: transform 0.2s;
     transform: scale(1.30);
+   border-radius: 50%;
 }
 
 
 .garantia:hover {
   transition: transform 0.2s;
     transform: scale(1.30);
+  border-radius: 50%;
 }
 
 
 .esperas:hover {
   transition: transform 0.2s;
     transform: scale(1.30);
+  border-radius: 50%;
 }
 
 /* PRODUCTS */
