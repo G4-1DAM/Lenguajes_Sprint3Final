@@ -1,8 +1,9 @@
 /* -------- CSS de Daniel del Toro Boigues ------------- */
+
 /* SLIDE INDEX */
 @keyframes slide {                        /* Esto sirve para el estilo de deslizamiento */
-  0% { transform: translateX(0); }
-  10% { transform: translateX(0); }
+  0% { transform: translateX(0%); }
+  10% { transform: translateX(0%); } 
 
   15% { transform: translateX(-100%); }
   30% { transform: translateX(-100%); }
@@ -29,7 +30,7 @@
 
 .slide {                              /*Este trozo es para darle efecto al deslizamiento*/
   width: 100%;
-  flex-shrink: 0;
+  flex-shrink: 100%;
   animation-name: slide;
   animation-duration: 20s;
   animation-iteration-count: infinite;
@@ -51,24 +52,6 @@
   position: relative;
 }
 
-.caption {
-  color: white;
-  text-shadow: 1px 1px black;
-  font-size: 8vw;
-  position: absolute;
-  bottom: 8vw;
-  right: 4vw;
-}
-
-.slide:target {
-  animation-name: none;
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 50;
-}
 
 /* servicios */
 
