@@ -3,7 +3,7 @@
 /* SLIDE INDEX */
 @keyframes slide {                        /* Esto sirve para el estilo de deslizamiento */
   0% { transform: translateX(0%); }
-  10% { transform: translateX(0%); } 
+  10% { transform: translateX(0%); }
 
   15% { transform: translateX(-100%); }
   30% { transform: translateX(-100%); }
@@ -267,6 +267,23 @@ footer{
   /*text-shadow: 0px 1px 1px rgba(24,20,164,0.8);*/
   text-align: center;
 }
+#horario{
+  height: auto;
+  width: 100%;
+}
+#aboutTable{
+  width: 30vw;
+  margin-left: auto;
+  margin-right:auto;
+  color: white;
+  border-radius: 15px;
+  border:3px solid white;
+}
+#aboutTable > tr > th, td{
+  border:3px solid white;
+  margin:15px;
+}
+
 
 table {
 
