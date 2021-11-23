@@ -60,16 +60,6 @@
   right: 4vw;
 }
 
-.slide:target {
-  animation-name: none;
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 50;
-}
-
 /* servicios */
 
 .recogida:hover {                 /* :hover es un efecto en este caso es una ampliacion al pasar el mouse por encima*/
