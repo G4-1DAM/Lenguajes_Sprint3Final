@@ -2,7 +2,7 @@
 /* SLIDE INDEX */
 @keyframes slide {                        /* Esto sirve para el estilo de deslizamiento */
   0% { transform: translateX(0); }
-  10% { transform: translateX(0); } 
+  10% { transform: translateX(0); }
 
   15% { transform: translateX(-100%); }
   30% { transform: translateX(-100%); }
@@ -60,23 +60,33 @@
   right: 4vw;
 }
 
+.slide:target {
+  animation-name: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 50;
+}
+
 /* servicios */
 
 .recogida:hover {                 /* :hover es un efecto en este caso es una ampliacion al pasar el mouse por encima*/
-  transition: transform 0.2s;       
-    transform: scale(1.30); 
+  transition: transform 0.2s;
+    transform: scale(1.30);
 }
 
 
 .garantia:hover {
-  transition: transform 0.2s; 
-    transform: scale(1.30); 
+  transition: transform 0.2s;
+    transform: scale(1.30);
 }
 
 
 .esperas:hover {
-  transition: transform 0.2s; 
-    transform: scale(1.30); 
+  transition: transform 0.2s;
+    transform: scale(1.30);
 }
 
 /* PRODUCTS */
@@ -180,12 +190,11 @@ body {
 
   /*texto de************************* ARTSIOM **************************************/
 
-  font-family: 'Asul', sans-serif, 'Work Sans', sans-serif;
   font-size: 20px;
   font-weight: 400;
   font-style: normal;
   font-variant: normal;
-  /*text-align: left;*/
+  text-align: center;
 }
 
 h1 {    /*fuente de texto*/
@@ -205,7 +214,7 @@ h1 {    /*Alineacion de texto*/
 }
 
 h2 {    /*fuente de texto*/
-  
+
   font-family: 'Tillana', cursive, Garamond, serif;
   font-size: 20px;
   font-weight: 900;
@@ -214,11 +223,11 @@ h2 {    /*fuente de texto*/
 
 }
 
-h2 {   
-        
-  text-align: center;  /*Alineacion de texto*/
-  /*text-decoration: overline solid rgb(68, 68, 68);*/
+h2 {
 
+  text-align: center;  /*Alineacion de texto*/
+  color: gold;
+  text-decoration: underline;
 }
 
 .correo_Alvaro{
@@ -285,32 +294,20 @@ table {
 
 /***********ROBERTO****************/
 
-
-@media screen and (max-width: 600px) {  /*Cuando la pantalla es mayor de 600px, cambia los elementos "li" de estar
-                                        verticales a estar horizontales*/
-  .columna {
-    box-sizing: border-box;       /*Esto es para que el tamaño de la caja sea el real de la caja sin ser
-                                  alterado por los paddings ni los bordes*/
-    width: 100%;
-  }
-}
-
 @media screen and (min-width: 600px) {
 
   li {
-    
-    box-sizing: border-box;
+
     display: inline;
   }
 }
 
 ul {                              /*Define el estilo que van a tener los elementos "ul" de la página(margen,
                                   padding, tamaño y color de fondo)*/
-  box-sizing: border-box;
   list-style-type: none;
   margin: 0;
-  padding: 2%;                    /*Hace que los botones del menú sean más grandes, según el porciento de
-                                  padding que le pongamos, y que el texto esté alineado en el centro*/
+  padding: 2%;                    /*Hace que los botones del menú sean más grandes, según el porciento de*/
+  color: gold;               /*padding que le pongamos, y que el texto esté alineado en el centro*/
   width: 100%;
   background-color: black;
 }
@@ -319,7 +316,6 @@ ul {                              /*Define el estilo que van a tener los element
 
 li {
 
-  box-sizing: border-box;
   padding:2%;
   text-align: center;
 }
@@ -329,7 +325,6 @@ li {
 
 li a {
 
-  box-sizing: border-box;
   color: gold;
   text-decoration: none;
 }
@@ -344,28 +339,241 @@ li:hover {
 
 /*Aquí comienza el código CSS de las columnas*/
 /*Define los estilos de las clases "columna"*/
-
 .columna {
-
-  box-sizing: border-box;
+  text-align: justify;
+  font-size: 14px;
   float: left;
   width: 25%;
   padding: 20px;
+  color: white;
 }
 
 /*Define cómo se van a mostrar las columnas dentro de la clase "cajaColumnas"*/
-
 .cajaColumnas:after {
 
-  box-sizing: border-box;
   content: "";
   display: table;
   clear: both;
 }
+hr{
+  width: 50%;
+  left: 25%;
+  position: relative;
+  border: none;
+  margin: 3em 0;
+  padding: 0;
+  background-image: -webkit-linear-gradient(left, #fff, #ccc, #fff);
+  display: block;
+  height: 1px;
+}
 
 /*Cuando la pantalla es menor de 600px, cambia las columnas de estar una al
 lado de la otra, a estar una encima de la otra*/
+@media screen and (max-width: 600px) {
+  .columna {
+    width: 100%;
+  }
+}
 
+/*********DANIEL********************/
+
+/* SLIDE INDEX */
+
+@keyframes slide {
+  0% { transform: translateX(0); }
+  10% { transform: translateX(0); }
+
+  15% { transform: translateX(-100%); }
+  30% { transform: translateX(-100%); }
+
+  35% { transform: translateX(-200%); }
+  50% { transform: translateX(-200%); }
+
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: sans-serif;
+  background-color: black;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.slider {
+  position: relative;
+}
+
+.slides {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+}
+
+.slide {
+  width: 100vw;
+  flex-shrink: 0;
+  animation-name: slide;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.slides:hover .slide {
+  animation-play-state: paused;
+}
+
+.slide img {
+  width: 100%;
+  vertical-align: top;
+}
+
+.slide a {
+  width: 100%;
+  display: inline-block;
+  position: relative;
+}
+
+.caption {
+  color: white;
+  text-shadow: 1px 1px black;
+  font-size: 8vw;
+  position: absolute;
+  bottom: 8vw;
+  right: 4vw;
+}
+
+.slide:target {
+  animation-name: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 50;
+}
+
+
+
+@media only screen and (min-width: 1200px) {
+  .slide {
+    width: 1200px;
+  }
+
+
+/* PRODUCTS */
+
+
+.nuestros_prouctos {
+
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  padding: 50px 0;
+}
+header h1 {
+  color: black;
+  text-shadow: 1px 3px 4px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  font-size: 40px;
+  letter-spacing: 0.4px;
+  font-family: "Raleway", sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0 30px;
+}
+.container .thumbex {
+  margin: 10px 20px 30px;
+  width: 100%;
+  min-width: 250px;
+  max-width: 435px;
+  height: 300px;
+  -ms-flex: 1;
+  flex: 1;
+  overflow: hidden;
+  outline: 2px solid black;
+  outline-offset: -15px;
+  background-color: blue;
+  box-shadow: 5px 10px 40px 5px rgba(0, 0, 0, 0.5);
+}
+.container .thumbex .thumbnail {
+  overflow: hidden;
+  min-width: 250px;
+  height: 300px;
+  position: relative;
+  opacity: 0.88;
+  backface-visibility: hidden;
+  transition: all 0.4s ease-out;
+}
+.container .thumbex .thumbnail img {
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  top: 50%;
+  height: 115%;
+  width: auto;
+  transform: translate(-50%, -50%);
+  backface-visibility: hidden;
+}
+.container .thumbex .thumbnail span {
+  position: absolute;
+  z-index: 2;
+  top: calc(150px - 20px);
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 10px 50px;
+  margin: 0 45px;
+  text-align: center;
+  font-size: 24px;
+  color: white;
+  font-weight: 300;
+  font-family: "Raleway", sans-serif;
+  letter-spacing: 0.2px;
+  transition: all 0.3s ease-out;
+}
+.container .thumbex .thumbnail:hover {
+  backface-visibility: hidden;
+  transform: scale(1.15, 1.15);
+  opacity: 1;
+}
+.container .thumbex .thumbnail:hover span {
+  opacity: 0;
+}
+
+
+}
+.container .thumbex .thumbnail img {
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  top: 50%;
+  height: 115%;
+  width: auto;
+  transform: translate(-50%, -50%);
+  backface-visibility: hidden;
+
+}
+.container .thumbex .thumbnail:hover {
+  backface-visibility: hidden;
+  transform: scale(1.15, 1.15);
+  opacity: 1;
+}
+.container .thumbex .thumbnail:hover span {
+  opacity: 0;
+}
 
 
 /*=====================================CSS ARAGON===============================================*/
@@ -389,7 +597,7 @@ form {
   background-color: #FFF977;
   padding: 20% 20% 20% 10%;
   width: 100%;
-  
+
 }
 
 
@@ -431,7 +639,7 @@ form {
 
 
 
-/* ToolTip classses */ 
+/* ToolTip classses */
 
 .tooltip .tooltiptext {   /*Creacion contenedor y transparencia*/
 
@@ -447,7 +655,7 @@ form {
     position: absolute;
     padding: 5px;
     z-index: 1;
-    margin-top: 89px; 
+    margin-top: 89px;
     margin-left: 10px;
     transition: opacity 1s;
 
@@ -570,7 +778,7 @@ ul > li {
 }
 
 ul > li > input {
-  
+
   -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
