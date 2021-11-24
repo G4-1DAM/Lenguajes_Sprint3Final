@@ -1,152 +1,4 @@
-/* -------- CSS de Daniel del Toro Boigues ------------- */
 
-/* SLIDE INDEX */
-@keyframes slide {                        /* Esto sirve para el estilo de deslizamiento */
-  0% { transform: translateX(0%); }
-  10% { transform: translateX(0%); }
-
-  15% { transform: translateX(-100%); }
-  30% { transform: translateX(-100%); }
-
-  35% { transform: translateX(-200%); }
-  50% { transform: translateX(-200%); }
-
-}
-
-.wrapper {
-  max-width: 1200px;                    /* Tamaño de la imagen insertada */
-  margin: 0 auto;
-}
-
-.slider {                               /*Un elemento posicionado relative es un elemento cuyo valor computado de posicion*/
-  position: relative;
-}
-
-.slides {
-  position: relative;
-  display: flex;
-  overflow: hidden;
-}
-
-.slide {                              /*Este trozo es para darle efecto al deslizamiento*/
-  width: 100%;
-  flex-shrink: 100%;
-  animation-name: slide;
-  animation-duration: 20s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-}
-
-.slides:hover .slide {              /*Esto sirve para que al pasar el mouse se quede pausado*/
-  animation-play-state: paused;
-}
-
-.slide {
-  width: 100%;
-  vertical-align: top;
-}
-
-.slide  {
-  width: 100%;
-  display: inline-block;
-  position: relative;
-}
-
-
-/* servicios */
-
-.recogida:hover {                 /* :hover es un efecto en este caso es una ampliacion al pasar el mouse por encima*/
-  transition: transform 0.2s;
-    transform: scale(1.30);
-   border-radius: 50%;
-}
-
-
-.garantia:hover {
-  transition: transform 0.2s;
-    transform: scale(1.30);
-  border-radius: 50%;
-}
-
-
-.esperas:hover {
-  transition: transform 0.2s;
-    transform: scale(1.30);
-  border-radius: 50%;
-}
-
-/* PRODUCTS */
-.nuestros_prouctos {
-
-  margin: 0;
-  padding: 0;
-}
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: center;
-  padding: 0 30px;
-}
-.container .thumbex {
-  margin: 10px 20px 30px;
-  width: 100%;
-  min-width: 250px;
-  max-width: 435px;
-  height: 300px;
-
-  flex: 1;
-  overflow: hidden;
-  outline: 2px solid black;
-  outline-offset: -15px;
-  background-color: blue;
-  box-shadow: 5px 10px 40px 5px rgba(0, 0, 0, 0.5);
-}
-.container .thumbex .thumbnail {
-  overflow: hidden;
-  min-width: 250px;
-  height: 300px;
-  position: relative;
-  opacity: 0.88;
-  backface-visibility: hidden;
-  transition: all 0.4s ease-out;
-}
-.container .thumbex .thumbnail img {
-  position: absolute;
-  z-index: 1;
-  left: 50%;
-  top: 50%;
-  height: 115%;
-  width: auto;
-  transform: translate(-50%, -50%);
-  backface-visibility: hidden;
-}
-.container .thumbex .thumbnail span {
-  position: absolute;
-  z-index: 2;
-  left: 0;
-  right: 0;
-  background: rgba(0, 0, 0, 0.7);
-  padding: 10px 50px;
-  margin: 0 45px;
-  text-align: center;
-  font-size: 24px;
-  color: white;
-  font-weight: 300;
-  font-family: "Raleway", sans-serif;
-  letter-spacing: 0.2px;
-  transition: all 0.3s ease-out;
-}
-.container .thumbex .thumbnail:hover {
-  backface-visibility: hidden;
-  transform: scale(1.15, 1.15);
-  opacity: 1;
-}
-.container .thumbex .thumbnail:hover {
-  backface-visibility: hidden;
-  transform: scale(1.15, 1.15);
-  opacity: 1;
-}
 
 /* ------------------- hasta aquí mi parte de css - Daniel --------------------------- */
 
@@ -162,17 +14,27 @@
   padding:0;
 
 }
+
 /*He puesto una class fondo para el body de about us y que tenga esta imagen*/
 /*Esta parte introduce un fondo con imagen al background*/
 
 /******************ALVARO ESTA MEZCLADO EN TODOS****************/
 
+header {
+
+  background-color: black;
+  border-bottom: 2px solid gold;
+}
+
+header > ul {
+
+  padding: 1em;
+  height: auto;
+}
+
 body {
 
-  background-image: url("../images/imagenFondo.jpg");
-  background-repeat:no-repeat;
-  background-size:100%;
-  background-attachment: fixed;
+  background-color: white;
 
   /*texto de************************* ARTSIOM **************************************/
 
@@ -180,22 +42,48 @@ body {
   font-weight: 400;
   font-style: normal;
   font-variant: normal;
+/*  text-align: center;*/
+}
+
+.body__AB {
+
+  background-image: url("../images/imagenFondo.jpg");
+  background-repeat:no-repeat;
+  background-size:100%;
+  background-attachment: fixed;
+  text-align: center;
+
+}
+
+.body__AG {
+
+  background-color: black;
+  text-align: center;
+}
+
+main {
+
+  width: 100%;
+  height: auto;
+}
+
+footer{
+
+  color: gold;
+  background-color: black;/*ALVARO*/
+  /*text-decoration: underline solid rgb(68, 68, 68);/*ARTSIOM*/
+  /*text-shadow: 0px 1px 1px rgba(24,20,164,0.8);*/
   text-align: center;
 }
 
 h1 {    /*fuente de texto*/
 
-    font-family: 'Tillana', cursive, 'Concert One', cursive;
-    font-size: 20px;
-    font-weight: 900;
-    font-style: normal;
-    font-variant: normal;
-
-}
-
-h1 {    /*Alineacion de texto*/
-
-    text-align: center;
+  font-family: 'Tillana', cursive, 'Concert One', cursive;
+  font-size: 20px;
+  font-weight: 900;
+  font-style: normal;
+  font-variant: normal;
+  text-align: center;
 
 }
 
@@ -206,14 +94,27 @@ h2 {    /*fuente de texto*/
   font-weight: 900;
   font-style: normal;
   font-variant: normal;
+    text-align: center;  /*Alineacion de texto*/
+  color: gold;
+  text-decoration: underline;
 
 }
 
-h2 {
+hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 
-  text-align: center;  /*Alineacion de texto*/
-  color: gold;
-  text-decoration: underline;
+hr{
+  width: 50%;
+  left: 25%;
+  position: relative;
+  border: none;
+  margin: 3em 0;
+  padding: 0;
+  background-image: -webkit-linear-gradient(left, #fff, #ccc, #fff);
+  display: block;
+  height: 1px;
 }
 
 .correo_Alvaro{
@@ -259,18 +160,11 @@ h2 {
 
 }
 
-footer{
-
-  color: gold;
-  background-color: black;/*ALVARO*/
-  /*text-decoration: underline solid rgb(68, 68, 68);/*ARTSIOM*/
-  /*text-shadow: 0px 1px 1px rgba(24,20,164,0.8);*/
-  text-align: center;
-}
 #horario{
   height: auto;
   width: 100%;
 }
+
 #aboutTable{
   width: 30vw;
   margin-left: auto;
@@ -279,54 +173,87 @@ footer{
   border-radius: 15px;
   border:3px solid white;
 }
+
 #aboutTable > tr > th, td{
   border:3px solid white;
   margin:15px;
 }
 
 
-table {
+/********ANTONIO*********/
 
-  align-content: center;
-  border:1px;
-  -webkit-box-shadow: 0px -2px 15px 5px #000000;
-  box-shadow: 0px -2px 15px 5px #000000;
+.table-responsive {
 
+  width: 100%;
+  height: auto;
 }
+
+.caja{
+
+  display: inline-table;
+  text-align: center;
+  width: 32%;
+}
+
+.ul-servicio {
+
+  margin-top: 20px;
+  margin-bottom: 30px;;
+  margin-left: auto;
+  margin-right: auto;
+  list-style-type: circle;
+}
+
+.ol-servicio {
+  margin-top: 20px;
+  margin-bottom: 30px;;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+
 
 
 /***********ROBERTO****************/
 
-@media screen and (min-width: 600px) {
+/*@media screen and (min-width: 600px) {
 
-  li {
+  .list {
 
     display: inline;
   }
 }
 
-ul {                              /*Define el estilo que van a tener los elementos "ul" de la página(margen,
+@media screen and (max-width: 600px) {
+
+  .columna {
+    width: 100%;
+  }
+}*/
+
+.contacto {                              /*Define el estilo que van a tener los elementos "ul" de la página(margen,
                                   padding, tamaño y color de fondo)*/
   list-style-type: none;
-  margin: 0;
   padding: 2%;                    /*Hace que los botones del menú sean más grandes, según el porciento de*/
   color: gold;               /*padding que le pongamos, y que el texto esté alineado en el centro*/
-  width: 100%;
   background-color: black;
 }
 
+.div__contacto {
 
+  width: 100%;
+}
 
-li {
+.li__index {
 
-  padding:2%;
-  text-align: center;
+  display: inline;
+  padding: 0 2em;
 }
 
 /*Pone el color de las letras en dorado para los enlaces del menú, y
 "text-decoration: none" para que aparezcan los enlaces sin decoración*/
 
-li a {
+.li__index a {
 
   color: gold;
   text-decoration: none;
@@ -335,314 +262,119 @@ li a {
 /*Cuando pasa el ratón por encima de los enlaces, cambia el color de fondo
 a gris*/
 
-li:hover {
+.li__index:hover {
 
   background-color: grey;
 }
 
 /*Aquí comienza el código CSS de las columnas*/
 /*Define los estilos de las clases "columna"*/
+
+.cajaColumnas {
+
+  border: 2px solid white;
+  width: 100%;
+  margin: 0;
+  justify-content:space-around;
+
+}
+
 .columna {
-  text-align: justify;
+
+
+}
+
+/*Define cómo se van a mostrar las columnas dentro de la clase "cajaColumnas"*/
+/*.cajaColumnas:after {
+
+  content: "";
+  display: table;
+  clear: both;
+}*/
+
+.columna {
+  
+  border: 1px solid white;
   font-size: 14px;
-  float: left;
   width: 25%;
   padding: 20px;
   color: white;
 }
 
-/*Define cómo se van a mostrar las columnas dentro de la clase "cajaColumnas"*/
-.cajaColumnas:after {
 
-  content: "";
-  display: table;
-  clear: both;
-}
-hr{
-  width: 50%;
-  left: 25%;
-  position: relative;
-  border: none;
-  margin: 3em 0;
-  padding: 0;
-  background-image: -webkit-linear-gradient(left, #fff, #ccc, #fff);
-  display: block;
-  height: 1px;
-}
+
+
 
 /*Cuando la pantalla es menor de 600px, cambia las columnas de estar una al
 lado de la otra, a estar una encima de la otra*/
-@media screen and (max-width: 600px) {
-  .columna {
-    width: 100%;
-  }
-}
-
-/*********DANIEL********************/
-
-/* SLIDE INDEX */
-
-@keyframes slide {
-  0% { transform: translateX(0); }
-  10% { transform: translateX(0); }
-
-  15% { transform: translateX(-100%); }
-  30% { transform: translateX(-100%); }
-
-  35% { transform: translateX(-200%); }
-  50% { transform: translateX(-200%); }
-
-}
-
-* { box-sizing: border-box; }
-
-html { scroll-behavior: smooth; }
-
-body {
-  font-family: sans-serif;
-  background-color: black;
-}
-
-.wrapper {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.slider {
-  position: relative;
-}
-
-.slides {
-  position: relative;
-  display: flex;
-  overflow: hidden;
-}
-
-.slide {
-  width: 100vw;
-  flex-shrink: 0;
-  animation-name: slide;
-  animation-duration: 20s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-}
-
-.slides:hover .slide {
-  animation-play-state: paused;
-}
-
-.slide img {
-  width: 100%;
-  vertical-align: top;
-}
-
-.slide a {
-  width: 100%;
-  display: inline-block;
-  position: relative;
-}
-
-.caption {
-  color: white;
-  text-shadow: 1px 1px black;
-  font-size: 8vw;
-  position: absolute;
-  bottom: 8vw;
-  right: 4vw;
-}
-
-.slide:target {
-  animation-name: none;
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 50;
-}
 
 
 
-@media only screen and (min-width: 1200px) {
-  .slide {
-    width: 1200px;
-  }
+/* -------- CSS de Daniel del Toro Boigues ------------- */
 
 
-/* PRODUCTS */
 
-
-.nuestros_prouctos {
-
-  margin: 0;
-  padding: 0;
-}
-
-header {
-  padding: 50px 0;
-}
-header h1 {
-  color: black;
-  text-shadow: 1px 3px 4px rgba(0, 0, 0, 0.4);
-  text-align: center;
-  font-size: 40px;
-  letter-spacing: 0.4px;
-  font-family: "Raleway", sans-serif;
-}
-
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: center;
-  padding: 0 30px;
-}
-.container .thumbex {
-  margin: 10px 20px 30px;
-  width: 100%;
-  min-width: 250px;
-  max-width: 435px;
-  height: 300px;
-  -ms-flex: 1;
-  flex: 1;
-  overflow: hidden;
-  outline: 2px solid black;
-  outline-offset: -15px;
-  background-color: blue;
-  box-shadow: 5px 10px 40px 5px rgba(0, 0, 0, 0.5);
-}
-.container .thumbex .thumbnail {
-  overflow: hidden;
-  min-width: 250px;
-  height: 300px;
-  position: relative;
-  opacity: 0.88;
-  backface-visibility: hidden;
-  transition: all 0.4s ease-out;
-}
-.container .thumbex .thumbnail img {
-  position: absolute;
-  z-index: 1;
-  left: 50%;
-  top: 50%;
-  height: 115%;
-  width: auto;
-  transform: translate(-50%, -50%);
-  backface-visibility: hidden;
-}
-.container .thumbex .thumbnail span {
-  position: absolute;
-  z-index: 2;
-  top: calc(150px - 20px);
-  left: 0;
-  right: 0;
-  background: rgba(0, 0, 0, 0.7);
-  padding: 10px 50px;
-  margin: 0 45px;
-  text-align: center;
-  font-size: 24px;
-  color: white;
-  font-weight: 300;
-  font-family: "Raleway", sans-serif;
-  letter-spacing: 0.2px;
-  transition: all 0.3s ease-out;
-}
-.container .thumbex .thumbnail:hover {
-  backface-visibility: hidden;
-  transform: scale(1.15, 1.15);
-  opacity: 1;
-}
-.container .thumbex .thumbnail:hover span {
-  opacity: 0;
-}
-
-
-}
-.container .thumbex .thumbnail img {
-  position: absolute;
-  z-index: 1;
-  left: 50%;
-  top: 50%;
-  height: 115%;
-  width: auto;
-  transform: translate(-50%, -50%);
-  backface-visibility: hidden;
-
-}
-.container .thumbex .thumbnail:hover {
-  backface-visibility: hidden;
-  transform: scale(1.15, 1.15);
-  opacity: 1;
-}
-.container .thumbex .thumbnail:hover span {
-  opacity: 0;
-}
 
 
 /*=====================================CSS ARAGON===============================================*/
-
 
 form {
 
   /*border :1px solid black;*/
   width: 95%;
   height: auto;
-  padding: 1%;
-  margin: 1%;
+  padding: 1em;
+  margin: 5%;
+  font-family: 'Asul', sans-serif, 'Work Sans', sans-serif;
+
 
 }
 
 .formulary {
 
-  border: 1px solid black;
-  /*text-align: center;*/
+  border: 0.5px solid black;
   border-radius: 15px;
-  background-color: #FFF977;
-  padding: 20% 20% 20% 10%;
-  width: 100%;
-
+  background-color: #C9DCCC;
+  padding: 2em 1.5em;
+  width: 50vw;
+  margin-left: auto;
+  margin-right: auto;
+  
 }
-
 
 .form__name {
 
   /*border: 1px solid black;*/
   font-weight: bold;
-  font-size: 3.5em;
-  font-family: 'Asul', sans-serif, 'Work Sans', sans-serif;
-  font-style: italic;
-  margin: 0 0 10% 0;
+  font-size: 3vw;
+  min-width: 250px;
 
 }
 
 .icon__input {
 
-  margin: 0 0 10% 0;
-  font-size: 50px;
+  /*border: 1px solid black;*/
+  text-align: center;
+  margin-top: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  margin-bottom: 25px;
+  font-size: 25px;
+
 }
 
 .icon__input input {
 
-  border: 2px solid black;
-  /*text-align: left;*/
-  font-size: 60px;
+  /*border: 1px solid black;*/
+  border-radius: 8px;
+  padding: 0.5em 0 0.5em 1em;
+  width: 25vw;
   font-family: 'Asul', sans-serif, 'Work Sans', sans-serif;
-  border-radius: 10px;
-  background-color: #E6E1E0;
-  padding: 0.5em;
-  /*margin-bottom: 3px;*/
-
+  font-size: 15px;
 }
 
-.formulary div {
-  border: 1px solid black;
-  /*margin-left: 4em;*/
-  padding: 1em 0 0 0;
-}
-
-
-
-/* ToolTip classses */
+/* ToolTip classses */ 
 
 .tooltip .tooltiptext {   /*Creacion contenedor y transparencia*/
 
@@ -650,15 +382,14 @@ form {
     visibility: hidden;
     opacity: 0;
     font-style: italic;
-    background-color: black;
-    color: white;
+    background-color: #F769DF;
     border-radius:5px;
     border: 1px solid grey;
     border-radius: 3px;
     position: absolute;
     padding: 5px;
     z-index: 1;
-    margin-top: 89px;
+    margin-top: 0px; 
     margin-left: 10px;
     transition: opacity 1s;
 
@@ -671,7 +402,7 @@ form {
     margin-top: -7px;
     border-width: 7px;
     border-style: solid;
-    border-color: transparent black transparent transparent;
+    border-color: transparent #F769DF transparent transparent;
 
 }.tooltip:hover .tooltiptext {  /*Para poder ver el contenedor*/
     visibility: visible;
@@ -680,51 +411,45 @@ form {
 
 .div__bot {
 
-  /*border: 1px solid black;*/
-  display: flex;
-  justify-content: space-between;
-  margin-left: auto;
+  margin-left: 2vw;
   margin-right: auto;
-  width: 25vw;
-  height: auto;
+  width: 37vw;
 }
 
 .form__select {
 
-  /*border: 1px solid black;*/
-  width: 12vw;
   border: 1px solid black;
   border-radius: 6px;
   background-color: #E6E1E0;
+  font-family: 'Asul', sans-serif, 'Work Sans', sans-serif;
+  width: 30vw;
+  font-size: 13px;
   padding: 0.5em;
-  /*display: block;*/
-  /*margin-right: auto;*/
   cursor: pointer;
   margin-top: 0.5em;
-  margin-bottom: 1em;
+  margin-bottom: 0.5em;
 
 }
 
-option {
+.option {
 
   font-style: italic;
 }
 
 .enviar {
 
-  font-size: 1vw;
   text-align: center;
-  width: 7vw;
-  max-width: 150px;
+  width: 10vw;
   height: auto;
   border: 1px solid black;
   padding: 0.2em 0.5em;
+  margin-left: 30vw;
+  margin-top: 2em;
+  font-size: 2vw;
   font-weight: bold;
   font-style: default;
+  font-family: 'Asul', sans-serif, 'Work Sans', sans-serif;
   cursor:  pointer;
-  /*display: block;*/
-  margin-left: auto;
-  margin-top: 100px;
   transition: transform 1s;
 
 }.enviar:hover {
@@ -735,10 +460,10 @@ option {
 .but__del {
 
   border: 1px solid black;
-  font-size: 1vw;
+  font-size: 2vw;
   text-align: center;
-  width: 7vw;
-  max-width: 150px;
+  width: 15vw;
+  /*max-width: 150px;*/
   height: auto;
   border: 1px solid black;
   padding: 0.2em 0.5em;
@@ -746,7 +471,7 @@ option {
   font-style: default;
   cursor:  pointer;
   /*display: block;*/
-  margin-left: 17vw;
+  margin-left: 25vw;
   margin-top: 5px;
   transition: transform 1s;
 
@@ -758,32 +483,38 @@ option {
 
 .div__sex {
 
-  /*border: 1px solid black;*/
+  /*border: 1px solid white;*/
   border-top: 5px ridge;
   border-bottom: 5px ridge;
-  width: 23vw;
+  width: 100%;
   padding: 0.5em;
   margin-left: 0;
   margin-bottom: 1em;
+
 }
 
-ul {
+.ul__sex {
 
   padding: 1em;
   text-decoration: none;
   list-style-type: none ;
+  background-color: transparent;
+
 
 }
 
-ul > li {
+.ul__sex > li {
 
+  /*border: 1px solid black;*/
   padding: 0.2em;
+  display: list-item;
+  text-align: left;
+  background-color: transparent;
+  font-size: 0.9em;
 }
 
-ul > li > input {
-
-  -webkit-appearance: none;
-    -moz-appearance: none;
+.ul__sex > li > input {
+  
     appearance: none;
     border-radius: 50%;
     width: 16px;
@@ -794,11 +525,11 @@ ul > li > input {
     position: relative;
     top: 1px;
 
-}ul > li > input:hover {
+}.ul__sex > li > input:hover {
 
   border: 2px solid black;
 
-}ul > li > input:checked {
+}.ul__sex > li > input:checked {
 
   border: 6px solid black;
 }
@@ -812,11 +543,13 @@ ul > li > label {
 textarea {
 
   border: 1px solid black;
-  width: 25vw;
+  width: 100%;
+  height: 25vw;
   margin-left: auto;
   margin-right: auto;
   margin-top: 1em;
   margin-bottom: 10px;
+  font-size: 0.9em;
 }
 
 input[type="submit"]{
@@ -855,5 +588,7 @@ form > div > div> label {
   font-style: italic;
   font-weight: default;
 }
+
+
 
 /*=====================================FIN CSS ARAGON===============================================*/

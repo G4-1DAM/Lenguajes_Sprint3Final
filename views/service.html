@@ -12,46 +12,86 @@
  </head>
  <body>
 
+    <header>
     <ul>
-      <li><a href="../index.html"> INDICE </a></li>
-      <li><a href="./products.html"> PRODUCTOS </a></li>
-      <li><a href="./service.html"> SERVICIOS </a></li>
-      <li><a href="./about_us.html"> SOBRE NOSOTROS </a></li>
-      <li><a href="./contact.html"> CONTACTO </a></li>
+      <li class="li__index"><a href="../index.html"> INDICE </a></li>
+      <li class="li__index"><a href="./products.html"> PRODUCTOS </a></li>
+      <li class="li__index"><a href="./service.html"> SERVICIOS </a></li>
+      <li class="li__index"><a href="./about_us.html"> SOBRE NOSOTROS </a></li>
+      <li class="li__index"><a href="./contact.html"> CONTACTO </a></li>
     </ul>
+  </header>
 
   <hr>
 
   <h1>SERVICIO DE REPARACIONES</h1>
+
   <hr>
+
   <h2>¿Qué servicios ofrecemos?</h2>
-  <p>Reparación de electrónica en todos tus productos que ya no tienen garantía,<br> incluso aquellos que no has adquirido en <b>PCT4U</b>.</p>
-   <pre><img class="recogida" src="images/ico-recogida.svg" width='200'height='80' alt="Imagen de recogida">     <img class="garantia" src="images/ico-garantia_satisfaccion.svg" alt="Imagen de garantia">  <img class="esperas" src="images/ico-sin_esperas.svg"width="200"height='80' alt="Imagen de sin esperas"></pre><b><i>Recogida y entrega en casa       Sin esperas     Garantia de satisfacción</i></b></pre><hr>
+
+  <p>Reparación de electrónica en todos tus productos que ya no tienen garantía, incluso aquellos que no has adquirido en <b>PCT4U</b></p>
+
+  <div class="table-responsive"> <!--Contenedor que almacena 3 cajas, que serann nuestras 3 columnas -->
+
+    <div class="caja">    <!--Cada caja es una columa, con una imagen y h3 -->
+      <img src="../Images/ico-recogida.svg" width=100px alt="Imagen de recogida">
+      <h4>Recogida y entrega en casa</h4>
+    </div>
+
+    <div class="caja">
+      <img src="../images/ico-garantia_satisfaccion.svg" width=100px alt="Imagen de garantia">
+      <h4>Sin esperas</h4>
+    </div>
+
+    <div class="caja">
+      <img src="../images/ico-sin_esperas.svg" width=100px alt="Imagen de sin esperas">
+      <h4>Garantía de satisfacción</h4>
+    </div>
+  </div>
+
+  <hr>
+
   <h2>¿Qué tipo de reparaciones ofrecemos?</h2>
-    <ul>
-        <li><b>Reparación de móviles, tablet y smartwatch:</b> arreglo de pantalla, batería<br> o de placa base, entre otros componentes.</li>
-        <li><b>Reparación de videoconsolas y periféricos:</b> limpieza completa con cambio<br> de pasta térmica, ampliación de HDD, o reemplazo de joystick.</li>
-        <li><b>Reparación de patinetes, bicicletas eléctricas y hoverboard:</b> Cambio de <br>centralita, cambio de ruedas y componentes (pastilla y luz de freno, manillar...)</li>
-        <li><b>Reparación de portátiles y equipos sobremesa:</b> Incluyendo limpieza completa<br> con cambio de pasta térmica, ampliación de memoria RAM, HDD/SSD, reparación<br> de placa base, reprogramación de BIOS, o copias de seguridad.</li>
+
+    <ul class="ul-servicio">
+
+        <li><b>Reparación de móviles, tablet y smartwatch:</b> arreglo de pantalla, batería o de placa base, entre otros componentes.</li>
+
+        <li><b>Reparación de videoconsolas y periféricos:</b> limpieza completa con cambio de pasta térmica, ampliación de HDD, o reemplazo de joystick.</li>
+
+        <li><b>Reparación de patinetes, bicicletas eléctricas y hoverboard:</b> Cambio de centralita, cambio de ruedas y componentes (pastilla y luz de freno, manillar...)</li>
+
+        <li><b>Reparación de portátiles y equipos sobremesa:</b> Incluyendo limpieza completa con cambio de pasta térmica, ampliación de memoria RAM, HDD/SSD, reparación de placa base, reprogramación de BIOS, o copias de seguridad.</li>
+
         <li><b>Reballing en placas base:</b> Reparación o cambio de bolas BGA para GPU/CPU</li>
+
         <li><b>Reparación de autoradio y equipos de sonido:</b> Arreglos en la placa.</li>
-        <li><b>Mantenimiento de impresoras 3D:</b> Mooding, mejoras o reprogramación de Marlin<br> entre otros.</li>
-        <li><b>Reparación de aspiradoras (robots):</b> Arreglo de placa, cambio de batería, sensores,<br> ruedas, cepillo...</li>
+
+        <li><b>Mantenimiento de impresoras 3D:</b> Mooding, mejoras o reprogramación de Marlin entre otros.</li>
+
+        <li><b>Reparación de aspiradoras (robots):</b> Arreglo de placa, cambio de batería, sensores, ruedas, cepillo...</li>
+
     </ul>
+
+  <hr>
+
   <h2>¿Cómo es el proceso de reparación?</h2>
-    <p><ol>
+
+    <ol class="ol-servicio">
       <li>Rellena el formulario de contacto.</li>
       <li>Nuestro equipo evaluará tu caso y te ofrecerá un presupuesto sin compromiso.</li>
       <li>Podrás enviarnos tu artículo o pedir que lo recojamos en la dirección que nos facilites.</li>
       <li>Una vez reparado tu artículo, te lo entregaremos en tu domicilio.</li>
       <li>Podrás pagar la reparación de forma segura mediante transferencia bancaria o contrarrembolso.</li>
-    </ol></p>
-    <hr>
-    <b>Contacta con nosotros para obtener un presupuesto de reparación</b>
+    </ol>
+    
+    <!-- <hr> -->
+    <!-- <p><b>Contacta con nosotros para obtener un presupuesto de reparación</b></p> -->
 
 <!-- ----------------------------------------------- -->
 
-     <form>
+    <form>
       <div class="formulary">
 
         <div>
@@ -95,14 +135,13 @@
           </div>  
         </div>
 
-        <div class ="div__bot">
-          <div>
+          <div class ="div__bot">
             <select class="form__select" placeholder="Seleccione una">
               <option disabled selected>Seleccione</option>         
-              <option>Pantalla</option>
-              <option>Carga/Descarga</option>
-              <option>Sonido</option>
-              <option>Otros</option>
+              <option class="option">Pantalla</option>
+              <option class="option">Carga/Descarga</option>
+              <option class="option">Sonido</option>
+              <option class="option">Otros</option>
             </select>
           </div>
 
@@ -110,8 +149,6 @@
             <button class="enviar">Enviar</button>
             <span class="tooltiptext">Asegurese de rellenar todos los campos</span>
           </div>
-          
-        </div>
       </div>
     </form>
 
