@@ -1,0 +1,167 @@
+
+<!DOCTYPE html>
+
+<html lang="es-ES" >
+
+<head>
+    <title>Contacto PCT4U</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Artsiom Krautsou Kharlap // Grupo 4">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/styles.css"rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+<header>
+    <ul>
+        <li class="li__index"><a href="../index.html"> INDICE </a></li>
+        <li class="li__index"><a href="products.html"> PRODUCTOS </a></li>
+        <li class="li__index"><a href="service.html"> SERVICIOS </a></li>
+        <li class="li__index"><a href="about_us.html"> SOBRE NOSOTROS </a></li>
+        <li class="li__index"><a href="contact.html"> CONTACTO </a></li>
+    </ul>
+</header>
+
+<!-- aqui empieza el codigo para el slide -->
+<main>
+
+<!-- <div class="wrapper">
+  <div class="slider" id="slider">
+
+    <ul class="slides">
+      <li class="slide" id="slide1">
+        <a href="#">
+          <img src="Images/slider1.jpg" alt="photo 1">
+        </a>
+      </li>
+
+      <li class="slide" id="slide">
+        <a href="#">
+          <img src="Images/slider3.jpg" alt="photo 2">
+        </a>
+      </li>
+
+      <li class="slide" id="slide">
+        <a href="#">
+          <img src="Images/slider2.jpg" alt="photo 3">
+        </a>
+      </li>
+    </ul>
+
+    <ul class="slider-controler">
+      <li><a href="#slide1">&bullet;</a></li>
+      <li><a href="#slide2">&bullet;</a></li>
+      <li><a href="#slide3">&bullet;</a></li>
+    </ul>
+
+  </div>
+</div> -->
+
+           
+
+<h1>CONTACTO</h1>
+ <div class="col__cont">
+    <p>¿Dudas? Pues envía tu consulta a nuestro departamento de Atención al Cliente</p> 
+ </div>                                                                                                
+<!-- ********************************************************************************************************************************************* -->                                                                                                       
+<h1>FORMULARIO</h1>
+
+<form>
+
+    <div class="formulary__cont">
+
+        <label class="form__name">Nombre</label>
+        <div class="icon__input">
+          <i class="fa fa-user icon"></i>
+          <input type="text" placeholder="Nombre" name="Nombre" maxlength="12"required>
+        </div>
+
+        <label class="form__name">Apellidos</label>
+        <div class="icon__input">
+          <i class="fa fa-user icon"></i>
+          <input type="text" placeholder="Apellidos" name='Apellidos' maxlength="24"required>
+        </div>
+        
+        <label class="form__name">Teléfono</label>
+        <div class="icon__input">
+          <i class="fa fa-phone-square"></i>
+          <input type="tel" placeholder="+34 ..." name="Teléfono" maxlength="9" required>
+        </div>
+
+        <label class="form__name">Email</label>
+        <div class="icon__input">
+          <i class="fa fa-envelope icon"></i>
+          <input type="Email" placeholder="example@mail" name= 'Email' maxlength="30"required>
+        </div>
+  
+
+        <label class="form__name">Elija el servicio</label>
+        <div class="icon__input">
+            <select class="form__select" name="contact_service" required>
+                <option disabled selected></option>
+                <option>Montaje</option>
+                <option>Software</option>
+                <option>Atencion al cliente</option>
+            </select>
+        </div>
+    
+        <div  class="div__sex">
+            <p class="form__name">Elija su sexo</p>    
+            <ul class="ul__sex">
+                <li>
+                    <input type="radio" name="contact_sex" value="Hombre">
+                    <label>Hombre</label>
+                </li> 
+                <li>
+                    <input type="radio" name="contact_sex" value="Mujer">
+                    <label>Mujer</label>
+                </li>
+                <li>
+                    <input type="radio" name="contact_sex" value="Otro">
+                    <label>Otro</label>
+                </li>
+            </ul>
+        </div>
+    
+        <div>
+            <p class="form__name">Deje su mensaje</p>                     
+            <textarea name="contact_message" rows="10" cols="30" required></textarea>
+            <input class="but__del" type="reset" value="Borrar">           
+        </div>
+ 
+        <div class="services">
+            <input type="checkbox" checked name="Terminos" value="Acepto" required>
+            <label>Acepto los términos y servicios</label>
+        </div>
+
+          <div class="tooltip">
+            <button class="enviar">Enviar</button>
+            <span class="tooltiptext">Asegurese de rellenar todos los campos</span>
+          </div>
+
+    </div>
+</form>
+
+
+    <!-- ********************************************************************************************************************************************** -->
+
+<div class="col__cont">
+    <p>Tambien puedes visitarnos en:</p>
+</div>
+
+<div class="mapa">
+    <iframe height="300" width="600" src="https://maps.google.com/maps?q=%20Pl.%20Virgen%20Milagrosa,%2011,%2029017%20M%C3%A1laga&t=&z=15&iwloc=&output=embed"></iframe>
+</div>
+
+</main>
+
+<footer>
+    <div class="footer">
+      <h2>Derechos de autor</h2>
+      <p>PC4T &copy; guarda los derechos de autor de esta web desde el año 2021. Created by Daniel del Toro y Roberto García.</p>
+    </div>
+</footer>
+
+</body>
+</html>
