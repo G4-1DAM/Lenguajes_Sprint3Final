@@ -104,8 +104,8 @@ body {
 .footer {
 
   border: 1px solid white;
-  color: gold;
-  background-color: black;
+  color: Black;
+  background-image: linear-gradient(black, white);
   display: flex;
   width: 100%;
   height: auto;
