@@ -148,15 +148,14 @@ h1 {
   padding: 1em;
 
 }
-
-h2 {
+.h2-servicios {
 
   text-align: center;
   margin-bottom: 10px;
 
 }
 
-hr {
+.hr-servicios {
 
   margin-top: 20px;
   margin-bottom: 20px;
