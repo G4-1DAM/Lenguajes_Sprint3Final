@@ -76,7 +76,7 @@ body {
 
   background-image: url("../images/imagenFondoEdited.jpg");
   background-repeat:no-repeat;
-  background-size:100%;
+  background-size:cover;
   /*background-attachment: fixed;*/
   text-align: center;
   width: 100%;
