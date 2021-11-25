@@ -149,6 +149,20 @@ h1 {
 
 }
 
+h2 {
+
+  text-align: center;
+  margin-bottom: 10px;
+
+}
+
+hr {
+
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+}
+
 .correo_Alvaro{
 
   text-decoration: line-through solid rgb(68, 68, 68);
