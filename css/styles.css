@@ -91,10 +91,10 @@ body {
   width: 100%;
 }
 
-.body__Ant {
+/*.body__Ant {
 
   font-family: 'Asul', sans-serif, 'Work Sans', sans-serif;
-}
+}*/
 
 .main__Ant {
 
@@ -344,7 +344,7 @@ h1 {
 
 
 .cajaColumnas {
-
+  font-family: 'Asul', sans-serif, 'Work Sans', sans-serif;
   margin-left: auto;
   margin-right: auto;
   justify-content: space-around;
