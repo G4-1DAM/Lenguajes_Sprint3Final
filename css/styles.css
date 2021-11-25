@@ -376,89 +376,33 @@ h1 {
 
 /*********************************DANI***********************************/
 
-/* SLIDE INDEX */
-/*@keyframes slide {                        
-  0% { transform: translateX(0); }
-  10% { transform: translateX(0); } 
-
-  15% { transform: translateX(-100%); }
-  30% { transform: translateX(-100%); }
-
-  35% { transform: translateX(-200%); }
-  50% { transform: translateX(-200%); }
-
-}*/
-
-.wrapper {
-  max-width: 1200%;                    
-  margin: 0 auto;
+/* :hover sirve para al pasar el mouse haga el efecto */
+.banner1:hover { 
+  filter: saturate(500%);
 }
 
-.slider {                               
-  position: relative;
-}
 
-.slides {
-  position: relative;
-  display: flex;
-  overflow: hidden;
-}
-
-.slide {                              
-  width: 100%;
-  flex-shrink: 0;
-  animation-name: slide;
-  animation-duration: 20s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-  vertical-align: top;
-  display: inline-block;
-  position: relative;
-}
-
-.slides:hover .slide {              
-  animation-play-state: paused;
-}
-
-.caption {
-  color: white;
-  text-shadow: 1px 1px black;
-  font-size: 8vw;
-  position: absolute;
-  bottom: 8vw;
-  right: 4vw;
-}
-
-.slide:target {
-  animation-name: none;
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 50;
-}
-
-/* servicios */
-
+/*---- Iconos de la pagina serive ----*/
 .recogida:hover {                 
   transition: transform 0.2s;       
     transform: scale(1.30); 
+  border-radius: 5%;
 }
 
 .garantia:hover {
   transition: transform 0.2s; 
     transform: scale(1.30); 
+  border-radius: 5%;
 }
 
 .esperas:hover {
   transition: transform 0.2s; 
     transform: scale(1.30); 
+    border-radius: 5%;
 }
 
+
 /* PRODUCTS */
-
-
 .container {
 
   display: flex;
