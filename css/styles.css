@@ -77,7 +77,6 @@ body {
   background-image: url("../images/imagenFondoEdited.jpg");
   background-repeat:no-repeat;
   background-size:cover;
-  /*background-attachment: fixed;*/
   text-align: center;
   width: 100%;
   height: 100%;
@@ -109,8 +108,6 @@ body {
   display: flex;
   width: 100%;
   height: auto;
-/*  bottom: 0;
-  left: 0;*/
   padding: 0.5em;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -164,9 +161,15 @@ h1 {
 
 .correo_Alvaro{
 
-  text-decoration: line-through solid rgb(68, 68, 68);
+  text-decoration: line-through solid rgb(255, 255, 255);
+  color: yellow;
 
 }
+
+.separacion_letras{
+
+
+    }
 
 .negrita{
 
@@ -196,6 +199,43 @@ h1 {
 
   letter-spacing: 2px;
 
+}
+
+.columna p {
+
+  text-indent: 25px;
+}
+
+.enlace:link {
+    font-family: 'Asul', sans-serif, 'Work Sans', sans-serif;
+    color: blue;
+    background-color: transparent;
+    }
+
+/* Enlace  visitado */
+.enlace:visited {
+    font-family: 'Asul', sans-serif, 'Work Sans', sans-serif;
+    color: green;
+    background-color: transparent;
+    }
+
+/* Raton sobre el enlace */
+.enlace:hover {
+    font-family: 'Asul', sans-serif, 'Work Sans', sans-serif;
+    color: red;
+    background-color: transparent;
+    }
+
+/* Mientras pinchas el enlace */
+.enlace:active {
+    font-family: 'Asul', sans-serif, 'Work Sans', sans-serif;
+    color: pink;
+    background-color: transparent;
+    }
+
+.sombrica {
+  color: black;
+  text-shadow: -5px 2px 2px grey;
 }
 
 .index{
@@ -261,6 +301,7 @@ h1 {
   margin-left: auto;
   margin-right: auto;
   list-style-type: circle;
+  letter-spacing: 2px;
 }
 
 .ol-servicio {
