@@ -10,6 +10,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../css/styles.css"rel="stylesheet"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet"> <!--Esta linea y la siguiente hay que copiarlas para el nuevo formulario sprint 3-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
@@ -66,82 +68,108 @@
  </div>                                                                                                
 <!-- ********************************************************************************************************************************************* -->                                                                                                       
 <h1>FORMULARIO</h1>
+<!--    Aqui dentro va el formulario COPIAR tal cual sprint 3-->
+    <div class="formulary">
+        <form action="/action_page.php" class="was-validated"> <!--Se ha cambiado la clase y agregado accion-->
+            <!--Nombre-->
+            <div class="mb-3 mt-3"> <!--class="formulary__cont" -->
+                <i class="fa fa-user icon"></i>
+                <label class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="name" placeholder="Nombre" name="Nombre" maxlength="12"
+                       required data-bs-toggle="tooltip" data-bs-placement="right" title="Nombre">
+                <div class="valid-feedback">Correcto.</div>
+                <div class="invalid-feedback">Revisa este campo.</div>
+            </div>
+            <!--Apellidos-->
+            <div class="mb-3 mt-3"> <!--class="formulary__cont" -->
+                <i class="fa fa-user icon"></i>
+                <label class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="surname" placeholder="Apellidos" name="Apellidos"
+                       maxlength="24" required data-bs-toggle="tooltip" data-bs-placement="right" title="Apellidos">
+                <div class="valid-feedback">Correcto.</div>
+                <div class="invalid-feedback">Revisa este campo.</div>
+            </div>
 
-<form>
+            <!--Telefono-->
+            <div class="mb-3 mt-3">
+                <i class="fa fa-phone-square"></i>
+                <label class="form-label">Teléfono</label>
+                <input type="tel" class="form-control" id="phone" placeholder="+34 ..." name="Teléfono" maxlength="9"
+                       required data-bs-toggle="tooltip" data-bs-placement="right" title="Teléfono">
+                <div class="valid-feedback">Correcto.</div>
+                <div class="invalid-feedback">Revisa este campo.</div>
+            </div>
+            <!--Correo-->
+            <div class="mb-3 mt-3">
+                <i class="fa fa-envelope icon"></i>
+                <label class="form-label">Email</label>
+                <input class="form-control" type="email" id="email" placeholder="example@mail" name='Email'
+                       maxlength="30" required data-bs-toggle="tooltip" data-bs-placement="right" title="Correo Electronico">
+                <div class="valid-feedback">Correcto.</div>
+                <div class="invalid-feedback">Revisa este campo.</div>
+            </div>
 
-    <div class="formulary__cont">
+            <!--Servicio-->
+            <div class="container mt-3">
+                <form action="/action_page.php">
+                    <label for="servicio" class="form-label" data-bs-toggle="tooltip" data-bs-placement="right" title="Servicio" >Elija el servicio</label>
+                    <select class="form-select" id="servicio" name="servicio" required>
+                        <option disabled selected></option>
+                        <option>Montaje</option>
+                        <option>Software</option>
+                        <option>Atencion al cliente</option>
+                    </select>
+                </form>
+            </div>
 
-        <label class="form__name">Nombre</label>
-        <div class="icon__input">
-          <i class="fa fa-user icon"></i>
-          <input type="text" placeholder="Nombre" name="Nombre" maxlength="12"required>
-        </div>
+            <!--Sexo-->
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id="Hombre" name="optradio" value="Hombre" data-bs-toggle="tooltip" data-bs-placement="right" title="Hombre">Hombre
+                <label class="form-check-label" for="Hombre" ></label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id="Mujer" name="optradio" value="Mujer" data-bs-toggle="tooltip" data-bs-placement="right" title="Mujer">Mujer
+                <label class="form-check-label" for="Mujer" ></label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id="Otro" name="optradio" value="Otro" data-bs-toggle="tooltip" data-bs-placement="right" title="Otro">Otro
+                <label class="form-check-label" for="Otro" ></label>
+            </div>
 
-        <label class="form__name">Apellidos</label>
-        <div class="icon__input">
-          <i class="fa fa-user icon"></i>
-          <input type="text" placeholder="Apellidos" name='Apellidos' maxlength="24"required>
-        </div>
-        
-        <label class="form__name">Teléfono</label>
-        <div class="icon__input">
-          <i class="fa fa-phone-square"></i>
-          <input type="tel" placeholder="+34 ..." name="Teléfono" maxlength="9" required>
-        </div>
+            <!--Mensaje-->
+            <div class="form-floating">
+                <label for="comment" data-bs-toggle="tooltip" data-bs-placement="right" title="Deja tu mensaje">Deje su mensaje aqui</label>
+                <textarea class="form-control" id="comment" name="text"  placeholder="Deje su mensaje aqui" required data-bs-toggle="tooltip" data-bs-placement="right" title="Dejanos tu mensaje"></textarea>
+                <div class="valid-feedback">Correcto.</div>
+                <div class="invalid-feedback">Revisa este campo.</div>
+            </div>
 
-        <label class="form__name">Email</label>
-        <div class="icon__input">
-          <i class="fa fa-envelope icon"></i>
-          <input type="Email" placeholder="example@mail" name= 'Email' maxlength="30"required>
-        </div>
-  
+            <!--Boton de borrado-->
+            <div class="container mt-3"> <!--Se pone class container mt-3 para el tipo de boton -->
+                <input type="reset" class="btn btn-danger" value="Borrar" data-bs-toggle="tooltip" data-bs-placement="right" title="Borrar"> <!--Se coloca el tipo de boton de peligro-->
+            </div>
+            <!--aceptacion de terminos-->
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="Terminos" name="Terminos" value="something" checked>
+                <label class="form-check-label">Acepto los términos y servicios</label>
+            </div>
 
-        <label class="form__name">Elija el servicio</label>
-        <div class="icon__input">
-            <select class="form__select" name="contact_service" required>
-                <option disabled selected></option>
-                <option>Montaje</option>
-                <option>Software</option>
-                <option>Atencion al cliente</option>
-            </select>
-        </div>
-    
-        <div  class="div__sex">
-            <p class="form__name">Elija su sexo</p>    
-            <ul class="ul__sex">
-                <li>
-                    <input type="radio" name="contact_sex" value="Hombre">
-                    <label>Hombre</label>
-                </li> 
-                <li>
-                    <input type="radio" name="contact_sex" value="Mujer">
-                    <label>Mujer</label>
-                </li>
-                <li>
-                    <input type="radio" name="contact_sex" value="Otro">
-                    <label>Otro</label>
-                </li>
-            </ul>
-        </div>
-    
-        <div>
-            <p class="form__name">Deje su mensaje</p>                     
-            <textarea name="contact_message" rows="10" cols="30" required></textarea>
-            <input class="but__del" type="reset" value="Borrar">           
-        </div>
- 
-        <div class="services">
-            <input type="checkbox" checked name="Terminos" value="Acepto" required>
-            <label>Acepto los términos y servicios</label>
-        </div>
+            <!--Boton de enviar-->
+            <div class="container mt-3"> <!--Se pone class container mt-3 para el tipo de boton -->
+                <input type="submit" class="btn btn-success" value="Enviar" data-bs-toggle="tooltip" data-bs-placement="right" title="Enviar"> <!--Se coloca el tipo de boton verde-->
 
-          <div class="tooltip">
-            <button class="enviar">Enviar</button>
-            <span class="tooltiptext">Asegurese de rellenar todos los campos</span>
-          </div>
+            </div>
+<!--            Este script hace funcionar los tooltips en el formulario-->
+            <script>
+                var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+                var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+                    return new bootstrap.Tooltip(tooltipTriggerEl)
+                })
+            </script>
 
+        </form>
     </div>
-</form>
+
 
 
     <!-- ********************************************************************************************************************************************** -->
