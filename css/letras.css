@@ -1,0 +1,73 @@
+.correo_Alvaro{
+
+  text-decoration: line-through solid rgb(255, 255, 255);
+  color: yellow;
+
+}
+
+.negrita{
+
+  font-weight: 800;
+
+}
+
+.cursiva{
+
+  font-style: italic;
+
+}
+
+.uppercase{
+
+  text-transform: capitalize;
+
+}
+
+.interlineado{
+
+  line-height : 25px;
+
+}
+
+.separacion_letras{
+
+  letter-spacing: 2px;
+
+}
+
+.columna p{
+
+  text-indent: 25px;
+}
+
+.enlace:link {
+    font-family: 'Asul', sans-serif, 'Work Sans', sans-serif;
+    color: blue;
+    background-color: transparent;
+    }
+
+/* Enlace  visitado */
+.enlace:visited{
+    font-family: 'Asul', sans-serif, 'Work Sans', sans-serif;
+    color: green;
+    background-color: transparent;
+    }
+
+/* Raton sobre el enlace */
+.enlace:hover{
+    font-family: 'Asul', sans-serif, 'Work Sans', sans-serif;
+    color: red;
+    background-color: transparent;
+    }
+
+/* Mientras pinchas el enlace */
+.enlace:active{
+    font-family: 'Asul', sans-serif, 'Work Sans', sans-serif;
+    color: pink;
+    background-color: transparent;
+    }
+
+.sombrica{
+  color: black;
+  text-shadow: -5px 2px 2px grey;
+}

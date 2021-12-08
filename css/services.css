@@ -1,0 +1,29 @@
+.table-responsive {
+
+  width: 100%;
+  height: auto;
+}
+
+.caja{
+
+  display: inline-table;
+  text-align: center;
+  width: 32%;
+}
+
+.ul-servicio {
+
+  margin-top: 20px;
+  margin-bottom: 30px;;
+  margin-left: auto;
+  margin-right: auto;
+  list-style-type: circle;
+  letter-spacing: 2px;
+}
+
+.ol-servicio {
+  margin-top: 20px;
+  margin-bottom: 30px;;
+  margin-left: 100px;
+  margin-right: 100px;
+}

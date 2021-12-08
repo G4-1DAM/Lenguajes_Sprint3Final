@@ -1,0 +1,45 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Asul&family=Work+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Tillana&display=swap');
+
+*{
+
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+
+}
+body {
+
+  background-color: white;
+}
+
+header {
+
+  background-color: black;
+  color: gold; 
+  border-bottom: 2px solid gold;
+  text-align: center;
+  width: 100%;
+  height: auto;
+  }
+
+main {
+
+  margin: 0 5%;
+}
+
+
+
+
+h1 {    
+  
+  font-family: 'Tillana', cursive, 'Concert One', cursive;
+  font-size: 20px;
+  font-weight: 900;
+  font-style: normal;
+  font-variant: normal;
+  text-align: center; 
+  padding: 1em;
+}
+

@@ -1,0 +1,14 @@
+.mapa {
+
+  width: 100%;
+}
+
+.mapa > iframe {
+
+  border:  1px solid black;
+  box-shadow: 1px 1px 1px 1px grey;
+  width: 100%;
+  height: 25vw;
+  margin-left: auto;
+  margin-right: auto;
+}

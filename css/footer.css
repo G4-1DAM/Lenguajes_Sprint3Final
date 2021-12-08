@@ -1,0 +1,26 @@
+footer {
+
+  border: 1px solid white;
+  color: Black;
+  background-image: linear-gradient(black, white);
+  display: flex;
+  width: 100%;
+  height: 5em;
+  padding: 0.5em;
+  flex-direction: column;
+  text-align: center;
+}
+
+footer > h2 {
+
+  font-family: 'Tillana', cursive, Garamond, serif;
+  font-weight: 900;
+  color: gold;
+  text-decoration: underline;
+  font-size: 1em;
+}
+
+footer > p {
+
+  font-size: 0.8em;
+}
