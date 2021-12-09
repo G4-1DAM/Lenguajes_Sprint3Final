@@ -2,28 +2,6 @@
   filter: saturate(500%);
 }
 
-.recogida:hover {                 
-  transition: transform 0.2s;       
-    transform: scale(1.30); 
-  border-radius: 5%;
-  opacity: 0.5;
-}
-
-.garantia:hover {
-  transition: transform 0.2s; 
-    transform: scale(1.30); 
-  border-radius: 5%;
-  opacity: 0.5;
-  -webkit-box-reflect: right; 
-}
-
-.esperas:hover {
-  transition: transform 0.2s; 
-    transform: scale(1.30); 
-    border-radius: 5%;
-  opacity: 0.5;
-}
-
 .container {
 
   display: flex;

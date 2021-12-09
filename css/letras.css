@@ -41,33 +41,47 @@
 }
 
 .enlace:link {
-    font-family: 'Asul', sans-serif, 'Work Sans', sans-serif;
+
+    
     color: blue;
     background-color: transparent;
-    }
+}
 
 /* Enlace  visitado */
 .enlace:visited{
-    font-family: 'Asul', sans-serif, 'Work Sans', sans-serif;
+
     color: green;
     background-color: transparent;
-    }
+}
 
 /* Raton sobre el enlace */
 .enlace:hover{
-    font-family: 'Asul', sans-serif, 'Work Sans', sans-serif;
+
     color: red;
     background-color: transparent;
-    }
+}
 
 /* Mientras pinchas el enlace */
 .enlace:active{
-    font-family: 'Asul', sans-serif, 'Work Sans', sans-serif;
+
     color: pink;
     background-color: transparent;
-    }
+}
+
+
+.col__cont {
+
+  font-size: 1em;
+  width: 100%%;
+  padding: 20px;
+  color: black;
+  margin-bottom: 1vw;
+  font-style: none;
+  font-weight: bold;
+  background-color: rgba(200, 200, 200, 0.4);
+}
 
 .sombrica{
-  color: black;
+  
   text-shadow: -5px 2px 2px grey;
 }

@@ -1,13 +1,9 @@
-.contacto {                       
-  list-style-type: none;
-  padding: 2%;                    
-  color: gold;               
-  background-color: black;
-}
 
-.div__contacto {
-
-  width: 100%;
+.cajaColumnas {
+  font-family: 'Asul', sans-serif, 'Work Sans', sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-around;
 }
 
 .columna {
@@ -21,28 +17,14 @@
   margin-bottom: 30vw;
 }
 
-.col__cont {
+.div__contacto {
 
-  font-size: 1em;
-  width: 100%%;
-  padding: 20px;
-  color: black;
-  margin-bottom: 1vw;
-  font-style: none;
-  font-family: 'Asul', sans-serif, 'Work Sans', sans-serif;
-  font-weight: bold;
-  background-color: rgba(200, 200, 200, 0.4);
+  width: 100%;
 }
 
-.cajaColumnas {
-  font-family: 'Asul', sans-serif, 'Work Sans', sans-serif;
-  margin-left: auto;
-  margin-right: auto;
-  justify-content: space-around;
-}
-
-.cajaColumnas h1 {
-
-  background-color: rgba(255, 255, 255, 0.3);
-  font-weight: 900;
+.contacto {                       
+  list-style-type: none;
+  padding: 2%;                    
+  color: gold;               
+  background-color: black;
 }

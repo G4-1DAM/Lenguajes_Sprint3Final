@@ -1,15 +1,38 @@
-.table-responsive {
-
-  width: 100%;
-  height: auto;
-}
-
 .caja{
 
   display: inline-table;
   text-align: center;
   width: 32%;
 }
+
+.recogida:hover {                 
+  transition: transform 0.2s;       
+    transform: scale(1.30); 
+  border-radius: 5%;
+  opacity: 0.5;
+}
+
+.garantia:hover {
+  transition: transform 0.2s; 
+    transform: scale(1.30); 
+  border-radius: 5%;
+  opacity: 0.5;
+  -webkit-box-reflect: right; 
+}
+
+.esperas:hover {
+  transition: transform 0.2s; 
+    transform: scale(1.30); 
+    border-radius: 5%;
+  opacity: 0.5;
+}
+
+.table-responsive {
+
+  width: 100%;
+  height: auto;
+}
+
 
 .ul-servicio {
 
