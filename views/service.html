@@ -9,6 +9,8 @@
     <title>Services PCT4U</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet"> <!--Esta linea y la siguiente hay que copiarlas para el nuevo formulario sprint 3-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
 
  </head>
  <body>
@@ -94,64 +96,69 @@
     <!-- <p><b>Contacta con nosotros para obtener un presupuesto de reparación</b></p> -->
 
 <!-- ----------------------------------------------- -->
+<!--Copiar y pegar tal cual! Sprint 3-->
+    <form action="/action_page.php" class="was-validated">
+        <div class="formulary">
 
-    <form>
-      <div class="formulary">
+<!--campo doble para nombre y apellidos-->
+            <div class="input-group mb-3">
+                <span class="input-group-text">Datos Cliente</span>
+                <input type="text" class="form-control" placeholder="Nombre" id="name" name="Nombre"
+                       maxlength="12" required data-bs-toggle="tooltip" data-bs-placement="right" title="Nombre">
 
-        <div>
-          <label class="form__name">Nombre</label>
-          <div class="icon__input">
-            <i class="fa fa-user icon"></i>
-            <input type="text" placeholder="Nombre" name="Nombre" maxlength="12"required>
-          </div>
-        </div>
+                <input type="text" class="form-control" placeholder="Apellidos" id="surname" name="Apellidos"
+                       maxlength="24" required data-bs-toggle="tooltip" data-bs-placement="right" title="Apellidos">
+            </div>
+<!--Campo para el telefono-->
+            <div class="input-group mb-3">
+                <span class="input-group-text">Teléfono</span>
+                <input type="tel" class="form-control"  id="phone" placeholder="+34 ..." name="Teléfono" maxlength="9"
+                       required data-bs-toggle="tooltip" data-bs-placement="right" title="Teléfono">
+            </div>
+<!--Campo para el Correo electronico-->
+            <div class="input-group mb-3">
+                <span class="input-group-text">Correo electrónico</span>
+                <input type="email" class="form-control" id="email" placeholder="example@mail" name='Email'
+                       maxlength="30" required data-bs-toggle="tooltip" data-bs-placement="right" title="Correo Electronico">
+            </div>
+<!--Campor para el servicio-->
+            <div class="input-group mb-3">
+                <span class="input-group-text">Dispositivo</span>
+                <input type="text" class="form-control" id="device" placeholder="Indica el dispositivo" required data-bs-toggle="tooltip" data-bs-placement="right" title="Indica el dispositivo">
+            </div>
+<!--Lista de servicios-->
+            <div class="container mt-3">
+                <form action="/action_page.php">
+                    <label for="browser" class="form-label" >Elije un servicio de la lista:</label>
+                    <input class="form-control" list="browsers" name="browser" id="browser" required data-bs-toggle="tooltip" data-bs-placement="right" title="Servicio" >
+                    <datalist id="browsers">
+                        <option value="Pantalla">
+                        <option value="Carga/Descarga">
+                        <option value="Sonido">
+                        <option value="Otros">
+                    </datalist>
+                </form>
+            </div>
+<!--            salgo de linea para separar los botones-->
+            <br/>
+<!--Boton de borrado-->
+            <div class="btn-group">
+                <button type="reset" class="btn btn-outline-danger" data-bs-toggle="tooltip" data-bs-placement="right" title="Borrar" >Borrar</button>
 
-        <div>
-          <label class="form__name">Apellidos</label>
-            <div class="icon__input">
-            <i class="fa fa-user icon"></i>
-            <input type="text" placeholder="Apellidos" name='Apellidos' maxlength="24"required>
-          </div>
-        </div>
+<!--Boton de Enviar-->
+                <button type="submit" class="btn btn-outline-success" data-bs-toggle="tooltip" data-bs-placement="right" title="Enviar" >Enviar</button>
+            </div>
 
-        <div>
-          <label class="form__name">Teléfono</label>
-          <div class="icon__input">
-            <i class="fa fa-phone-square"></i>
-            <input type="tel" placeholder="+34 ..." name="Teléfono" maxlength="9" required>
-          </div>
-        </div>
-
-        <div>
-          <label class="form__name">Email</label>
-          <div class="icon__input">
-            <i class="fa fa-envelope icon"></i>
-            <input type="Email" placeholder="example@mail" name= 'Email' maxlength="30"required>
-          </div>
-        </div>
-
-        <div>
-          <label class="form__name">Dispositivo</label>
-          <div class="icon__input">
-            <i class="fa fa-exclamation-triangle"></i>
-            <input type='text' placeholder="Ej: Xiaomi Mi9" name='Dispositivo'required>
-          </div>  
-        </div>
-
-          <div class ="div__bot">
-            <select class="form__select" placeholder="Seleccione una">
-              <option disabled selected>Seleccione</option>         
-              <option class="option">Pantalla</option>
-              <option class="option">Carga/Descarga</option>
-              <option class="option">Sonido</option>
-              <option class="option">Otros</option>
-            </select>
-          </div>
-
-          <button class="enviar">Enviar</button>
+            <script>
+                var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+                var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+                    return new bootstrap.Tooltip(tooltipTriggerEl)
+                })
+            </script>
         </div>
     </form>
 
+<!--------------------------------------------------->
 <!--------------------------------------------------->
 </main>
   
