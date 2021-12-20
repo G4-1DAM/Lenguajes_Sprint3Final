@@ -5,21 +5,39 @@
 		<meta charset= "UTF-8"> <!-- Formato de codificacion de caracteres -->
 		<meta name="author" content="Carlos Aragón García // Grupo 4">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	    <link href="../css/styles.css"rel="stylesheet"/>
+	    	<link href="../css/styles.css"rel="stylesheet"/>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
 		<title>PCT4 U Products</title>
 	</head>
 
 	<body>
 
-		<header>
-    		<ul>
-    		  <li class="li__index"><a href="../index.html"> INDICE </a></li>
-    		  <li class="li__index"><a href="./products.html"> PRODUCTOS </a></li>
-    		  <li class="li__index"><a href="./service.html"> SERVICIOS </a></li>
-    		  <li class="li__index"><a href="./about_us.html"> SOBRE NOSOTROS </a></li>
-    		  <li class="li__index"><a href="./contact.html"> CONTACTO </a></li>
-    		</ul>
-		</header>
+	<header>
+    	<!-- INICIO Menú hamburguesa Roberto -->
+  	<div class="offcanvas offcanvas-start" id="demo">
+
+    		<div class="offcanvas-header">
+      			<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+   		</div>
+
+      		<ul class= "offcanvas-body">
+        		<li class="li__index"><a href="index.html"> ÍNDICE </a></li>
+        		<li class="li__index"><a href="./views/products.html"> PRODUCTOS </a></li>
+        		<li class="li__index"><a href="./views/service.html"> SERVICIOS </a></li>
+        		<li class="li__index"><a href="./views/about_us.html"> SOBRE NOSOTROS </a></li>
+        		<li class="li__index"><a href="./views/contact.html"> CONTACTO </a></li>
+      		</ul>
+  	</div>
+
+  	<div class="container-fluid mt-3">
+    		<div class="d-grid">
+      			<button class="btn btn-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
+        		MENU
+      			</button>
+    		</div>
+  	</div>
+  	<!-- FIN Menú hamburguesa Roberto -->
+	</header>
 
 		<main>
 
