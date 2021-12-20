@@ -2,21 +2,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Asul&family=Work+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Tillana&display=swap');
 
-*{
+/*{
 
   margin:0;
   padding:0;
   box-sizing: border-box;
   font-family: 'Asul', sans-serif, 'Work Sans', sans-serif;
 
-}
-body {
+}*/
 
+/*body {
   background-color: white;
-}
+  font-family: 'Noto Sans', 'sans-serif'; 
+  font-size: 1em;
+  color: white;
+} */
 
 header {
-
+ 
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1em;
   background-color: black;
   color: gold; 
   border-bottom: 2px solid gold;
@@ -26,15 +31,14 @@ header {
   }
 
 main {
-
   margin: 0 5%;
 }
 
 
 h1 {    
-  
-  font-family: 'Tillana', cursive, 'Concert One', cursive;
-  font-size: 20px;
+  font-family: 'Oswald', cursive, 'sans-serif', cursive;
+  font-size: 3em;
+  color: white;
   font-weight: 900;
   font-style: normal;
   font-variant: normal;
