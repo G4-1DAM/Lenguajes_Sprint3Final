@@ -18,13 +18,30 @@
 
 <body>
 <header>
-    <ul>
-        <li class="li__index"><a href="../index.html"> INDICE </a></li>
-        <li class="li__index"><a href="products.html"> PRODUCTOS </a></li>
-        <li class="li__index"><a href="service.html"> SERVICIOS </a></li>
-        <li class="li__index"><a href="about_us.html"> SOBRE NOSOTROS </a></li>
-        <li class="li__index"><a href="contact.html"> CONTACTO </a></li>
-    </ul>
+    <!-- INICIO Menú hamburguesa Roberto -->
+  <div class="offcanvas offcanvas-start" id="demo">
+
+    <div class="offcanvas-header">
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+    </div>
+
+      <ul class= "offcanvas-body">
+        <li class="li__index"><a href="index.html"> ÍNDICE </a></li>
+        <li class="li__index"><a href="./views/products.html"> PRODUCTOS </a></li>
+        <li class="li__index"><a href="./views/service.html"> SERVICIOS </a></li>
+        <li class="li__index"><a href="./views/about_us.html"> SOBRE NOSOTROS </a></li>
+        <li class="li__index"><a href="./views/contact.html"> CONTACTO </a></li>
+      </ul>
+  </div>
+
+  <div class="container-fluid mt-3">
+    <div class="d-grid">
+      <button class="btn btn-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
+        MENU
+      </button>
+    </div>
+  </div>
+  <!-- FIN Menú hamburguesa Roberto -->
 </header>
 <!-- Carousel de imagenes Alvaro -->
 <!-- Carousel -->
