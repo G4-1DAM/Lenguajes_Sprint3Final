@@ -1,0 +1,77 @@
+.grid-container {
+  display: grid;
+  grid-template-areas:
+  "left left middle middle right right";
+     grid-column-gap: 10px;
+}
+
+.left,
+.middle,
+.right {
+  padding: 10px;
+  height: 200px;
+}
+
+/* Style the left column */
+.left {
+  grid-area: left;
+}
+
+/* Style the middle column */
+.middle {
+  grid-area: middle;
+}
+
+/* Style the right column */
+.right {
+  grid-area: right;
+}
+
+@media (max-width: 600px) {
+  .grid-container {
+    grid-template-areas:
+      "left left left left left left"
+      "middle middle middle middle middle middle"
+      "right right right right right right";
+  }
+}
+
+.grid-container-2 {
+  display: grid;
+  grid-template-areas:
+  "left left middle middle right right";
+     grid-column-gap: 10px;
+}
+
+.left-2,
+.middle-2,
+.right-2 {
+  padding: 10px;
+  height: 200px;
+  position: relative;
+}
+
+/* Style the left column */
+.left-2 {
+  grid-area: left;
+}
+
+/* Style the middle column */
+.middle-2 {
+  grid-area: middle;
+}
+
+/* Style the right column */
+.right-2 {
+  grid-area: right;
+  position:absolute;
+}
+
+@media (max-width: 600px) {
+  .grid-container-2 {
+    grid-template-areas:
+      "left left left left left left"
+      "middle middle middle middle middle middle"
+      "right right right right right right";
+  }
+}
