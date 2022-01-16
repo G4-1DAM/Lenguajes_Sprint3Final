@@ -1,4 +1,4 @@
-.grid-container {
+.grid-container-service {
   display: grid;
   grid-template-areas:
   "left left middle middle right right";
@@ -27,48 +27,23 @@
   grid-area: right;
 }
 
+/* Contenedor en 4 columnas pagina index */
+.grid-container-index {
+  display: grid;
+  grid-column-gap: 10px;
+  grid-template-columns: auto auto auto auto;
+}
+
+/* Contenedor en 1 columna pagina index estilo movil 600px */
 @media (max-width: 600px) {
-  .grid-container {
-    grid-template-areas:
-      "left left left left left left"
-      "middle middle middle middle middle middle"
-      "right right right right right right";
+  .grid-container-index {
+    grid-template-columns: auto;
   }
 }
 
-.grid-container-2 {
-  display: grid;
-  grid-template-areas:
-  "left left middle middle right right";
-     grid-column-gap: 10px;
-}
-
-.left-2,
-.middle-2,
-.right-2 {
-  padding: 10px;
-  height: 200px;
-  position: relative;
-}
-
-/* Style the left column */
-.left-2 {
-  grid-area: left;
-}
-
-/* Style the middle column */
-.middle-2 {
-  grid-area: middle;
-}
-
-/* Style the right column */
-.right-2 {
-  grid-area: right;
-  position:absolute;
-}
-
+/* Contenedor en 1 columna pagina servicios estilo movil 600px */
 @media (max-width: 600px) {
-  .grid-container-2 {
+  .grid-container-service {
     grid-template-areas:
       "left left left left left left"
       "middle middle middle middle middle middle"
