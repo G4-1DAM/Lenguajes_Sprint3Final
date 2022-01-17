@@ -33,6 +33,11 @@
   grid-column-gap: 10px;
   grid-template-columns: auto auto auto auto;
 }
+/* Contener pagina Products*/
+.container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
 
 /* Contenedor en 1 columna pagina index estilo movil 600px */
 @media (max-width: 600px) {
@@ -48,5 +53,11 @@
       "left left left left left left"
       "middle middle middle middle middle middle"
       "right right right right right right";
+  }
+}
+*/Contenedor pagina Products estilo movil 600px */
+@media (max-width: 600px) {
+  .container {
+    grid-template-columns: auto;
   }
 }
