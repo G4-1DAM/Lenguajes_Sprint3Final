@@ -39,6 +39,11 @@
   grid-template-columns: auto auto auto;
 }
 
+.grid-container-aboutUs{
+  display: grid;
+  grid-template-columns: auto;
+}
+
 /* Contenedor en 1 columna pagina index estilo movil 600px */
 @media (max-width: 600px) {
   .grid-container-index {
