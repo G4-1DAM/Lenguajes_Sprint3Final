@@ -13,7 +13,6 @@
   height: auto;
   width: 100%;
   margin: 0.5em 0 4em 0;
-  /*font-size: 1.6vw;*/
 }
 
 #aboutTable{
@@ -45,7 +44,6 @@
 .col__AbUs {
 
   text-align: justify;
-  /*font-size: 1em;*/
   padding: 20px;
   color: white;
   margin-bottom: 1vw;

@@ -11,20 +11,24 @@ header {
   height: auto;
   }
 
-main {
-  margin: 0 5%;
-}
-
-
 h1 {    
   font-family: 'Oswald', cursive, 'sans-serif', cursive;
-  font-size: 3em;
   color: black;
-  font-weight: 900;
   font-style: normal;
   font-variant: normal;
   text-align: center; 
-  padding: 1em;
+
+}
+
+main{
+  margin: 2%;
+}
+
+h2 {
+  font-style: normal;
+  font-variant: normal;
+  text-align: center; 
+
 }
 
 

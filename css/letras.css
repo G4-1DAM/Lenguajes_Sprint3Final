@@ -71,14 +71,14 @@
 
 .col__cont {
 
-  font-size: 1em;
+  /*font-size: 1em;*/
   width: 100%%;
   padding: 20px;
-  color: black;
+  /*color: black;*/
   margin-bottom: 1vw;
   font-style: none;
-  font-weight: bold;
-  background-color: rgba(200, 200, 200, 0.4);
+  /*font-weight: bold;*/
+  /*background-color: rgba(200, 200, 200, 0.4);*/
 }
 
 .sombrica{

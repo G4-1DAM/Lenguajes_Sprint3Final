@@ -1,7 +1,8 @@
-footer {
 
-  border: 1px solid white;
-  color: Black;
+footer {
+  
+  border: 0.3em solid white;
+  color: black;
   background-image: linear-gradient(black, white);
   display: flex;
   width: 100%;
@@ -13,14 +14,12 @@ footer {
 
 footer > h2 {
 
-  font-family: 'Tillana', cursive, Garamond, serif;
+  font-family: 'Oswald', cursive, 'sans-serif', cursive;
   font-weight: 900;
   color: gold;
   text-decoration: underline;
   font-size: 1em;
 }
 
-footer > p {
 
-  font-size: 0.8em;
-}
+
