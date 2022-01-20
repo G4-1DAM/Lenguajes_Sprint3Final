@@ -2,30 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Asul&family=Work+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Tillana&display=swap');
 
-/*{
-
-  margin:0;
-  padding:0;
-  box-sizing: border-box;
-  font-family: 'Asul', sans-serif, 'Work Sans', sans-serif;
-
-}*/
-
-/*body {
-  background-color: white;
-  font-family: 'Noto Sans', 'sans-serif'; 
-  font-size: 1em;
-  color: white;
-} */
 
 header {
  
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 1em;
   background-color: black;
-  color: gold; 
   border-bottom: 2px solid gold;
-  text-align: center;
   width: 100%;
   height: auto;
   }
@@ -46,15 +27,4 @@ h1 {
   padding: 1em;
 }
 
-/*Genera un div personalizado para ambos formularios, contacto y servicios.*/
-.formulary {
 
-  width: 50vw;
-  background-color: rgba(122, 119, 97, 0.4);
-  border: 0.5px solid black;
-  border-radius: 15px;
-  padding: 2em 1.5em;
-  margin-left: 2em;
-  margin-right: auto;
-  
-}

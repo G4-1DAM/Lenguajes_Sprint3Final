@@ -5,27 +5,22 @@ header > ul {
   margin: 0;
   padding: 2vh;                    
   width: 100%;
-  justify-content: space-around;
 
 }
 
 .body__RG {
 
   background-color: black;
-  text-align: center;
   width: 100%;
 }
 
 .li__index {
 
-  text-align: center;
   padding: 0.5em;
-  height: auto;
 }
 
 .li__index a {
 
-  color: gold;
   text-decoration: none;
 }
 
