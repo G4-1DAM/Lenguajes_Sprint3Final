@@ -38,4 +38,108 @@
   }
 }
 
+/* Indice */
+.grid-container-index {
+  font-family: 'Noto Sans', 'sans-serif'; 
+  font-size: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: justify;
+  color: white;
+}
+
+main {
+  font-family: 'Noto Sans', 'sans-serif'; 
+  font-size: 1em;
+  color: black;
+  margin: 0.5%;
+}
+
+
+/* Pie de página */
+
+footer {
+  
+  border: 1em solid white;
+  color: Black;
+  background-image: linear-gradient(black, white);
+  display: flex;
+  width: 100%;
+  height: 5em;
+  padding: 0.5em;
+  flex-direction: column;
+  text-align: center;
+}
+
+footer > h2 {
+
+  font-family: 'Oswald', cursive, 'sans-serif', cursive;
+  font-weight: 900;
+  color: gold;
+  text-decoration: underline;
+  font-size: 1em;
+}
+
+footer > p {
+
+  font-size: 0.8em;
+}
+
+/* Contacto */
+.contacto {                       
+  list-style-type: none;
+  padding: 2%;                    
+  color: gold;               
+  background-color: black;
+}
+
+.div__contacto {
+
+  width: 100%;
+}
+
+/* Para los titulos */
+h1 {    
+  font-family: 'Oswald', cursive, 'sans-serif', cursive;
+  font-size: 3em;
+  color: black;
+  font-style: normal;
+  font-variant: normal;
+  text-align: center; 
+
+}
+
+h2 {
+  font-family: 'Oswald', cursive, 'sans-serif', cursive;
+  font-size: 3em;
+  color: black;
+  font-style: normal;
+  font-variant: normal;
+  text-align: center; 
+
+}
+
+/* PRODUCTOS */
+.span {
+  font-family: 'Noto Sans', 'sans-serif'; 
+  font-size: 1em;
+  color: gold; 
+
+}
+
+/*Genera un div personalizado para ambos formularios, contacto y servicios.*/
+.formulary {
+  font-family: 'Noto Sans', 'sans-serif'; 
+  font-size: 1em;
+  color: black;
+  width: 50vw;
+  background-color: rgba(122, 119, 97, 0.4);
+  border: 0.5px solid black;
+  border-radius: 15px;
+  padding: 2em 1.5em;
+  margin-left: 2em;
+  margin-right: auto;
+  
+}
+
 
