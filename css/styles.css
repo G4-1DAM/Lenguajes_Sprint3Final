@@ -13,52 +13,5 @@
 @import url(./formulary.css);
 
 
-@media screen and (min-width: 800px) {
-
-  .li__index {
-
-    display: inline;
-  }
-
-  .list {
-
-    display: inline;
-  }
-}
-
-
-@media screen and (max-width: 800px) {
-
-  .columna {
-    width: 100%;
-  }
-
-  .col__AbUs {
-    width: 100%;
-  }
-}
-
-/* Indice */
-.grid-container-index {
-  /*font-family: 'Noto Sans', 'sans-serif'; */
-  /*font-size: 1em;*/
-  margin-left: auto;
-  margin-right: auto;
-  /*text-align: justify;*/
-  /*color: white;*/
-}
-
-
-
-/* PRODUCTOS */
-.span {
-  font-family: 'Noto Sans', 'sans-serif'; 
-  font-size: 1em;
-  color: gold; 
-
-}
-
-/*Genera un div personalizado para ambos formularios, contacto y servicios.*/
-
 
 
