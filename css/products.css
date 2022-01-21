@@ -73,3 +73,10 @@
   transform: scale(1.15, 1.15);
   opacity: 1;
 }
+
+.span {
+  font-family: 'Noto Sans', 'sans-serif'; 
+  font-size: 1em;
+  color: gold; 
+
+}
